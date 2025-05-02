@@ -42,14 +42,10 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
             <a href="https://portal.disamina.ai/signup" target="_blank" rel="noreferrer noopener">
             <Button className="bg-gradient-blend hover:opacity-90 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105">
-              Start Hiring in Minutes
+              Hire with Disamina
               <ArrowRight className="w-5 h-5" />
             </Button>
             </a>
-            <Button variant="outline" className="border-gray-300 hover:border-primary hover:bg-primary/5 text-gray-700 hover:text-primary text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105">
-              <MessageSquare className="w-5 h-5" />
-              Let Disamina AI Help You Now
-            </Button>
           </div>
           
           <div className="mt-12 animate-fade-in">

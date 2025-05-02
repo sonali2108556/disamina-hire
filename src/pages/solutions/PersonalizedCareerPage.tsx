@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 const PersonalizedCareerPage = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-purple-50 to-white">
     <SeoHead
-      title="AI-Powered Career Page Builder"
-      description="Create an engaging career page with personalized job recommendations for every visitor, boosting applications and employer brand."
-      keywords="career page, job portal, applicant experience, career site, employer branding, job recommendations"
+      title="Custom Career Pages for Employers | Disamina AI"
+      description="Build a personalized career page with Disamina AI to showcase your brand and attract top talent effortlessly."
+      keywords="custom career page, branded job portal, employer branding"
     />
     <Navbar />
     <div className="w-full bg-white shadow">

@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 const features = [
   {
     id: "career-page",
-    href:"/solutions/career-page",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=650&q=80",
+    href: "/solutions/career-page",
     title: "Career Page",
     icon: <CircleUser className="h-6 w-6" />,
     description:
@@ -20,7 +21,8 @@ const features = [
   },
   {
     id: "ai-screening",
-    href:"/solutions/ai-screening",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
+    href: "/solutions/ai-screening",
     title: "AI Screening",
     icon: <Brain className="h-6 w-6" />,
     description:
@@ -34,7 +36,8 @@ const features = [
   },
   {
     id: "talent-assessments",
-    href:"/solutions/talent-assessment",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=550&q=80",
+    href: "/solutions/talent-assessment",
     title: "Talent Assessments",
     icon: <BookCheck className="h-6 w-6" />,
     description:
@@ -48,7 +51,8 @@ const features = [
   },
   {
     id: "ai-proctoring",
-    href:"/solutions/ai-proctoring",
+    image: "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    href: "/solutions/ai-proctoring",
     title: "AI Proctoring",
     icon: <Check className="h-6 w-6" />,
     description:
@@ -62,7 +66,8 @@ const features = [
   },
   {
     id: "video-interviews",
-    href:"/solutions/video-interview",
+    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=510&q=80",
+    href: "/solutions/video-interview",
     title: "Video Interviews",
     icon: <Video className="h-6 w-6" />,
     description:
@@ -76,7 +81,8 @@ const features = [
   },
   {
     id: "campus-hiring",
-    href:"/solutions/campus-hiring",
+    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=410&q=80",
+    href: "/solutions/campus-hiring",
     title: "Campus Hiring",
     icon: <School className="h-6 w-6" />,
     description:
@@ -115,7 +121,7 @@ const FeaturesStrip = () => {
             Complete AI Recruitment Platform
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Our intelligent platform covers every step of your hiring process, 
+            Our intelligent platform covers every step of your hiring process,
             from attracting candidates to making the final selection.
           </p>
         </div>
@@ -149,11 +155,11 @@ const FeaturesStrip = () => {
                   </div>
                   <h3 className="text-2xl font-bold">{currentFeature.title}</h3>
                 </div>
-                
+
                 <p className="text-gray-600 mb-6">
                   {currentFeature.description}
                 </p>
-                
+
                 <ul className="space-y-3">
                   {currentFeature.bullets.map((bullet, idx) => (
                     <li key={idx} className="flex items-start">
@@ -163,21 +169,22 @@ const FeaturesStrip = () => {
                   ))}
                 </ul>
                 <Link to={currentFeature.href}>
-                <button className="mt-6 btn-primary inline-flex items-center">
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </button>
+                  <button className="mt-6 btn-primary inline-flex items-center">
+                    Learn More
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </button>
                 </Link>
               </div>
-              
+
               <div className="bg-gray-100 rounded-lg flex items-center justify-center min-h-[300px]">
                 {/* Placeholder for feature illustration/screenshot */}
-                <div className="text-center p-6">
+                <img src={currentFeature.image} className="h-[340px] w-[100%]"/>
+                {/* <div className="text-center p-6">
                   <div className="mx-auto w-16 h-16 mb-4 bg-primary/20 rounded-full flex items-center justify-center">
                     {currentFeature.icon}
                   </div>
                   <p className="text-gray-500">{currentFeature.title} Visualization</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

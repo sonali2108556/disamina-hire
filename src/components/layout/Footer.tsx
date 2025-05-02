@@ -1,19 +1,39 @@
 
 import { Link } from "react-router-dom";
 import logo from "@/assets/images/logo.png";
+import msLogo from "@/assets/images/ms-partner.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = [
     {
-      title: "Platform",
+      title: "For Employers",
       links: [
-        { name: "AI Screening", href: "/solutions/ai-screening" },
-        { name: "Talent Assessment", href: "/solutions/talent-assessment" },
-        { name: "Campus Hiring", href: "/solutions/campus-hiring" },
+        { name: "AI JD Generator", href: "/solutions/ai-jd-generator" },
+        { name: "AI Resume Screening", href: "/solutions/ai-screening" },
+        { name: "Personalized Career Page", href: "/solutions/career-page" },
+        { name: "Assessments", href: "/solutions/talent-assessment" },
+        { name: "AI Proctoring", href: "/solutions/ai-proctoring" },
         { name: "Video Interviews", href: "/solutions/video-interview" },
-        { name: "Career Page", href: "/solutions/career-page" },
+        { name: "Campus Hiring", href: "/solutions/campus-hiring" },
+        { name: "Psychometric Tests", href: "/assessments/psychometric" },
+        { name: "Technical Tests", href: "/assessments/technical" },
+        { name: "Aptitude Tests", href: "/assessments/aptitude" },
+        { name: "Behavioral Tests", href: "/assessments/behavioral" },
+        { name: "Communication Skills Tests", href: "/assessments/communication" },
+      ],
+    },
+    {
+      title: "For Candidates",
+      links: [
+        { name: "AI Resume Scorer", href: "https://portal.disamina.ai/candidate/login" },
+        { name: "AI Resume Builder", href: "https://portal.disamina.ai/candidate/login" },
+        { name: "Latest Tech & IT Jobs", href: "https://jobs.disamina.ai/" },
+        { name: "Latest Sales & Marketing Jobs", href: "https://jobs.disamina.ai/" },
+        { name: "Latest Digital Marketing Jobs", href: "https://jobs.disamina.ai/" },
+        { name: "Latest Data Science Jobs", href: "https://jobs.disamina.ai/" },
+        { name: "Latest Product Manager Jobs", href: "https://jobs.disamina.ai/" },
       ],
     },
     {
@@ -21,18 +41,11 @@ const Footer = () => {
       links: [
         { name: "About Us", href: "/about" },
         { name: "Careers", href: "/careers" },
-        { name: "Contact", href: "/contact" },
-        { name: "Pricing", href: "/pricing" },
-        { name: "For Candidates", href: "https://jobs.disamina.ai" },
-      ],
-    },
-    {
-      title: "Legal",
-      links: [
+        { name: "Resources", href: "/resources" },
+        { name: "Contact Us", href: "/contact" },
         { name: "Privacy Policy", href: "/privacy" },
-        { name: "Terms of Service", href: "/terms" },
-        // { name: "Data Security", href: "/security" },
-        // { name: "GDPR Compliance", href: "/gdpr" },
+        { name: "Terms of Use", href: "/terms" },
+        { name: "Delete My Data", href: "/delete-my-data" },
       ],
     },
   ];
@@ -48,6 +61,9 @@ const Footer = () => {
             <p className="text-gray-600 mb-6">
               AI-powered hiring assistant that helps you hire faster, smarter, and better.
             </p>
+            <div className="mb-6">
+              <img src={msLogo} alt="Disamina" className="h-[140px]" />
+            </div>
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/disamina.in"
@@ -122,11 +138,11 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            © {currentYear} Disamina AI. All rights reserved.
+        <div className="border-t border-gray-200 mt-12 pt-8">
+          <p className="text-gray-500 text-sm mb-4 md:mb-0 text-center">
+            © {currentYear} Disamina Corp Private Limited. All rights reserved.
           </p>
-          <div className="flex space-x-6">
+          {/* <div className="flex space-x-6">
             <Link
               to="/privacy"
               className="text-gray-500 hover:text-primary transition-colors text-sm"
@@ -139,7 +155,7 @@ const Footer = () => {
             >
               Terms of Service
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 const AIJDGenerator = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-indigo-50 to-white">
     <SeoHead
-      title="AI Job Description Generator"
-      description="Create inclusive and engaging job descriptions with our AI-powered JD generator. Optimize for keywords and diversity in seconds."
-      keywords="job description generator, AI JD creator, job posting tool, inclusive job description, JD template"
+      title="AI Job Description Generator | Disamina AI"
+      description="Create optimized, role-specific job descriptions in seconds using Disamina AI’s intelligent JD generator."
+      keywords="AI job description tool, JD generator, job posting automation"
     />
     <Navbar />
     <div className="w-full bg-white shadow">

@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 const BehavioralTests = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-green-50 to-white">
     <SeoHead
-      title="Behavioral Assessment Tests"
-      description="Evaluate teamwork, leadership, and accountability with scenario-based behavioral testing and AI-driven analysis. Hire for attitude and cultural fit."
-      keywords="behavioral assessment, leadership assessment, teamwork test, behavioral interview, attitude test, culture fit"
+      title=" Behavioral Assessments for Hiring | Disamina AI"
+      description="Identify workplace behavior, soft skills, and emotional intelligence with AI-driven behavioral assessments."
+      keywords=" behavioral tests, workplace behavior assessment, emotional intelligence test"
     />
     <Navbar />
     <div className="container mx-auto py-12 md:py-20 animate-fade-in">

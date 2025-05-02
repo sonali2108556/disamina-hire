@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import ChatBotButton from "@/components/shared/ChatBotButton";
 import { Link } from "react-router-dom";
+import SeoHead from "@/components/shared/SeoHead";
 
 const assessmentTypes = [
   { id: "all", label: "All", icon: CheckSquare },
@@ -113,6 +114,11 @@ const Assessments = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SeoHead
+      title="Skill Assessments for Hiring | Disamina AI"
+      description="Assess candidates with job-specific skill tests designed by experts and powered by AI to ensure accurate evaluation."
+      keywords="role-based assessments, skill testing, job-specific evaluations"
+    />
       <Navbar />
       <main className="flex-grow">
         <section className="bg-gradient-primary text-white py-20 md:py-28">

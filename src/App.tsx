@@ -29,6 +29,7 @@ import AptitudeTests from "./pages/assessments/AptitudeTests";
 import BehavioralTests from "./pages/assessments/BehavioralTests";
 import CommunicationSkillsTest from "./pages/assessments/CommunicationSkillsTest";
 import ScrollToTop from "./components/layout/ScrollToTop";
+import AIProctoring from "./pages/solutions/AIProctoring";
 
 const queryClient = new QueryClient();
 
@@ -46,6 +47,7 @@ const App = () => (
               <Route path="/about" element={<About />} />
               <Route path="/solutions" element={<Solutions />} />
               <Route path="/solutions/ai-screening" element={<AIResumeScreening />} />
+              <Route path="/solutions/ai-proctoring" element={<AIProctoring />} />
               <Route path="/solutions/career-page" element={<PersonalizedCareerPage />} />
               <Route path="/solutions/talent-assessment" element={<TalentAssessment />} />
               <Route path="/solutions/coding-assessment" element={<CodingAssessment />} />

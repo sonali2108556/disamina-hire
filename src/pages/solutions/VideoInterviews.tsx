@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 const VideoInterviews = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-red-50 to-white">
     <SeoHead
-      title="AI-Powered Video Interviews"
-      description="Save hours with asynchronous video interviews, AI-driven response analysis, and comprehensive candidate reports—all online."
-      keywords="video interviews, asynchronous interviews, recorded interviews, AI interview analysis, remote interviewing, video assessment"
+      title="AI-Powered Video Interviews | Disamina AI"
+      description="Conduct seamless, automated video interviews with Disamina AI—screen candidates faster with structured questions and insights."
+      keywords="AI video interview, one-way interviews, automated candidate screening"
     />
 
     <Navbar />

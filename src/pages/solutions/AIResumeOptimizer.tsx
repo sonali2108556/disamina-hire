@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 const AIResumeOptimizer = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-pink-50 to-white">
     <SeoHead
-      title="AI Resume Optimizer for Candidates"
-      description="Help candidates craft the perfect resume with AI-generated insights that boost match between their application and your job requirements."
-      keywords="resume optimizer, CV improvement, resume builder, resume checker, ATS optimization, resume feedback"
+      title="AI Resume Optimizing Tool | Disamina AI"
+      description="Get an instant score and feedback on your resume with Disamina’s AI-powered resume evaluator."
+      keywords="resume optimizer, resume rating tool, CV evaluator AI"
     />
     <Navbar />
     <div className="w-full bg-white shadow">

@@ -9,7 +9,7 @@ import Footer from "@/components/layout/Footer";
 const TalentAssessment = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-green-50 to-white">
     <SeoHead
-      title="Comprehensive Talent Assessment Platform"
+      title="Comprehensive Talent Assessment Platform | Disamina AI"
       description="Empower your team to assess skills and potential with AI-powered, customizable, role-based assessments covering technical and soft skills."
       keywords="talent assessment, skills evaluation, candidate testing, pre-employment testing, skill verification, hiring assessment"
     />

@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import ChatBotButton from "@/components/shared/ChatBotButton";
+import SeoHead from "@/components/shared/SeoHead";
 
 const ForCandidates = () => {
   const [currentWord, setCurrentWord] = useState(0);
@@ -21,19 +22,24 @@ const ForCandidates = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SeoHead
+        title="AI-Powered Career Tools for Job Seekers | Disamina AI"
+        description="Get resume insights, mock interviews, and career tools powered by AI to improve your job prospects."
+        keywords="tools for job seekers, resume feedback, career booster"
+      />
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="pt-32 pb-16 md:pt-40 md:pb-20 relative overflow-hidden bg-gradient-primary animate-fade-in">
           <div className="blur-circle blur-circle-primary w-[500px] h-[500px] -top-64 -left-64 animate-pulse-soft"></div>
           <div className="blur-circle blur-circle-secondary w-[300px] h-[300px] top-40 right-0 animate-pulse-soft"></div>
-          
+
           <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="max-w-[800px] mx-auto text-center">
               <div className="inline-block bg-white/10 px-4 py-2 rounded-full mb-4 animate-fade-in">
                 <span className="text-white font-medium">AI-Powered Career Advancement Platform</span>
               </div>
-              
+
               <h1 className="text-[38px] md:text-[46px] lg:text-[54px] font-bold mb-6 leading-tight text-white animate-slide-in">
                 Unlock Your{" "}
                 <span key={words[currentWord]} className="text-secondary inline-block animate-fade-in">
@@ -41,27 +47,21 @@ const ForCandidates = () => {
                 </span>
                 {" "}with AI
               </h1>
-              
+
               <p className="text-[16px] md:text-[18px] text-white/90 mb-8 max-w-[600px] mx-auto animate-fade-in">
                 Let AI optimize your resume, prepare you for interviews, and help you land your dream job faster than ever before.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-                <Button 
-                  size="lg"
-                  className="bg-white text-primary hover:bg-gray-100 text-[16px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105"
-                >
-                  Get Started Free
-                  <ArrowRight className="w-5 h-5" />
-                </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="border-white text-white hover:bg-white/10 text-[16px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105"
-                >
-                  Watch Demo
-                  <Video className="w-5 h-5" />
-                </Button>
+                <Link to="https://portal.disamina.ai/candidate/login" rel="noreferrer noopener" target="_blank">
+                  <Button
+                    size="lg"
+                    className="bg-gradient-blend hover:opacity-90 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105"
+                  >
+                    Get Started Free
+                    <ArrowRight className="w-5 h-5" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -88,7 +88,9 @@ const ForCandidates = () => {
                   <p>Our AI analyzes your resume against job descriptions to ensure maximum matching score with ATS systems and hiring managers.</p>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="outline" className="w-full">Try Now</Button>
+                  <Link to="https://portal.disamina.ai/candidate/login" target="_blank" rel="noreferrer noopener">
+                    <Button variant="outline" className="w-full">Try Now</Button>
+                  </Link>
                 </CardFooter>
               </Card>
 
@@ -102,7 +104,9 @@ const ForCandidates = () => {
                   <p>Let our AI build a professional resume from scratch. Just input your experience and skills, and we'll format everything perfectly.</p>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="outline" className="w-full">Generate Resume</Button>
+                  <Link to="https://portal.disamina.ai/candidate/login" target="_blank" rel="noreferrer noopener">
+                    <Button variant="outline" className="w-full">Generate Resume</Button>
+                  </Link>
                 </CardFooter>
               </Card>
 
@@ -116,7 +120,9 @@ const ForCandidates = () => {
                   <p>Paste any job description and our AI will analyze the key requirements, showing you exactly what skills to emphasize in your application.</p>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="outline" className="w-full">Analyze a JD</Button>
+                  <Link to="https://portal.disamina.ai/candidate/login" target="_blank" rel="noreferrer noopener">
+                    <Button variant="outline" className="w-full">Analyze a JD</Button>
+                  </Link>
                 </CardFooter>
               </Card>
             </div>
@@ -159,15 +165,17 @@ const ForCandidates = () => {
                     <span>Practice assessments for common skills tests</span>
                   </li>
                 </ul>
-                <Button className="bg-primary hover:bg-primary-dark text-white">
-                  Try Mock Interview
-                </Button>
+                <Link to="https://portal.disamina.ai/candidate/login" target="_blank" rel="noreferrer noopener">
+                  <Button className="bg-primary hover:bg-primary-dark text-white">
+                    Try Mock Interview
+                  </Button>
+                </Link>
               </div>
               <div className="md:w-1/2">
                 <div className="bg-gray-200 rounded-xl aspect-video flex items-center justify-center">
                   <div className="text-center p-8">
                     <p className="text-gray-500 mb-2">Interview Simulation Preview</p>
-                    <Button variant="outline">Watch Demo</Button>
+                    {/* <Button variant="outline">Watch Demo</Button> */}
                   </div>
                 </div>
               </div>
@@ -182,7 +190,7 @@ const ForCandidates = () => {
               <h2 className="text-3xl font-bold mb-2">Simple, Transparent Pricing</h2>
               <p className="text-lg text-gray-600">Invest in your career success</p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
                 <h3 className="text-xl font-bold mb-2">Free</h3>
@@ -203,7 +211,7 @@ const ForCandidates = () => {
                 </ul>
                 <Button variant="outline" className="w-full">Start Free</Button>
               </div>
-              
+
               <div className="bg-primary/5 border-primary border rounded-lg shadow-md p-8 transform scale-105">
                 <div className="bg-primary text-white text-xs uppercase font-bold py-1 px-3 rounded absolute -mt-12 left-1/2 transform -translate-x-1/2">
                   MOST POPULAR
@@ -226,7 +234,7 @@ const ForCandidates = () => {
                 </ul>
                 <Button className="w-full bg-primary">Choose Plan</Button>
               </div>
-              
+
               <div className="bg-white rounded-lg shadow-md p-8 border border-gray-100">
                 <h3 className="text-xl font-bold mb-2">Premium</h3>
                 <p className="text-3xl font-bold mb-4">$49<span className="text-lg">/mo</span></p>
@@ -251,7 +259,7 @@ const ForCandidates = () => {
         </section>
 
         {/* Testimonials */}
-        <section className="py-16 md:py-24">
+        {/* <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Candidates Love Our Tools</h2>
@@ -301,7 +309,7 @@ const ForCandidates = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section className="bg-primary text-white py-16">
@@ -310,9 +318,11 @@ const ForCandidates = () => {
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               Join thousands of candidates who have accelerated their job search with Disamina AI.
             </p>
-            <Button size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg py-6 px-8">
-              Get Started Free
-            </Button>
+            <Link to="https://portal.disamina.ai/candidate/login" target="_blank" rel="noreferrer noopener">
+              <Button size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg py-6 px-8">
+                Get Hired
+              </Button>
+            </Link>
           </div>
         </section>
       </main>

@@ -1,5 +1,6 @@
 
 import { Helmet } from "react-helmet-async";
+import favicon from "@/assets/images/favicon.ico";
 
 interface SeoHeadProps {
   title: string;
@@ -14,10 +15,10 @@ const SeoHead = ({
   description,
   keywords,
   canonicalUrl,
-  image = "https://lovable.dev/opengraph-image-p98pqg.png", // Default image from index.html
+  image = favicon,
 }: SeoHeadProps) => {
   // Construct the full title with brand name
-  const fullTitle = `${title} | -Faster`;
+  const fullTitle = title;
   const url = canonicalUrl || typeof window !== "undefined" ? window.location.href : "";
 
   return (

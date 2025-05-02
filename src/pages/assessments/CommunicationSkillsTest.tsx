@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 const CommunicationSkillsTest = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-pink-50 to-white">
     <SeoHead
-      title="Communication Skills Assessment"
-      description="Assess written and spoken English fluency, clarity, and articulation with interactive audio and video questions scored by AI."
-      keywords="communication skills, English fluency test, language assessment, speaking test, writing assessment, verbal skills"
+      title="Communication Skills Assessment | Disamina AI"
+      description="Evaluate verbal and written communication skills of candidates using AI-based tests tailored to job roles."
+      keywords="communication test, verbal skills assessment, soft skills evaluation"
     />
     <Navbar />
     <div className="container mx-auto py-12 md:py-20 animate-fade-in">

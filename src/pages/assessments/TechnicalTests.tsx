@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 const TechnicalTests = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-white">
     <SeoHead
-      title="Technical Assessment Tests"
-      description="Assess candidates on practical coding, system design, and problem-solving with AI-powered evaluation. Hire the best technical talent."
-      keywords="technical assessment, coding test, developer screening, programming test, technical skills test, technical interview"
+      title="Technical Assessment Tests for Hiring | Disamina AI"
+      description="Validate technical expertise with role-specific coding, engineering, and IT skill assessments powered by AI."
+      keywords=" technical tests, IT skill assessment, engineering test"
     />
     <Navbar />
     <div className="container mx-auto py-12 md:py-20 animate-fade-in">

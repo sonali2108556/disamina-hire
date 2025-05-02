@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 const AptitudeTests = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-yellow-50 to-white">
     <SeoHead
-      title="Aptitude Assessment Tests"
-      description="Evaluate candidates on logical, analytical, and numerical skills with adaptive, AI-selected questions for better hiring decisions."
-      keywords="aptitude test, logical reasoning, analytical skills, numerical ability, cognitive assessment, IQ test"
+      title="Aptitude Tests for Recruitment | Disamina AI"
+      description="Assess logical reasoning, problem-solving, and numerical ability using AI-based aptitude tests."
+      keywords="aptitude test, cognitive ability test, recruitment assessment"
     />
     <Navbar />
     <div className="container mx-auto py-12 md:py-20 animate-fade-in">

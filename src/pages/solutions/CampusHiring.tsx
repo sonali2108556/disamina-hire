@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 const CampusHiring = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-orange-50 to-white">
     <SeoHead
-      title="AI Campus Hiring Solution"
-      description="Supercharge campus recruitment with bulk evaluation, event management, and automated shortlisting powered by AI technology."
-      keywords="campus recruitment, campus hiring, graduate recruitment, bulk assessment, campus drive, student hiring"
+      title="Virtual Campus Hiring Platform | Disamina AI"
+      description="Launch virtual campus drives and assess students at scale with Disamina’s end-to-end AI campus hiring platform."
+      keywords="campus hiring, university recruitment, virtual campus drive"
     />
     <Navbar />
     <div className="w-full bg-white shadow">

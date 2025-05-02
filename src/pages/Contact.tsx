@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent } from "@/components/ui/card";
 import ChatBotButton from "@/components/shared/ChatBotButton";
 import { useToast } from "@/hooks/use-toast";
+import SeoHead from "@/components/shared/SeoHead";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -66,6 +67,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <SeoHead
+        title="Contact Disamina AI | Get in Touch"
+        description="Reach out to Disamina AI for support, partnership inquiries, or product demos. We’re here to help you hire better."
+        keywords="contact Disamina, hiring support, AI recruitment demo"
+      />
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}

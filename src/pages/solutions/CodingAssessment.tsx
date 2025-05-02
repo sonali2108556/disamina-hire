@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 const CodingAssessment = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-yellow-50 to-white">
     <SeoHead
-      title="Technical Coding Assessment Solution"
-      description="Evaluate software engineers with real-world code tasks, automated AI analysis, and plagiarism detection on a modern coding platform."
-      keywords="coding assessment, programming test, developer evaluation, technical screening, code challenge, technical interview"
+      title="Coding Assessment Platform for Developers | Disamina AI"
+      description="Evaluate developer skills with real-time coding assessments tailored to your tech hiring needs."
+      keywords="coding assessments, developer evaluation, tech hiring tests"
     />
     <Navbar />
     <div className="w-full bg-white shadow">

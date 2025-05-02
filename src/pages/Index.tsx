@@ -20,9 +20,9 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SeoHead 
-        title="AI-Powered Hiring Platform" 
-        description="Disamina AI is an AI-powered hiring platform that helps you hire faster, smarter, and better."
-        keywords="AI recruitment, hiring platform, talent assessment, automated hiring, recruitment tools"
+        title="Best AI Hiring Platform for Employers | Disamina AI" 
+        description="Discover Disamina AI—an all-in-one hiring solution for employers to post jobs, screen resumes, conduct assessments, and interview candidates faster using AI."
+        keywords="AI hiring platform, hire with AI, recruitment automation"
       />
       <Navbar />
       <main className="flex-grow">

@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import ChatBotButton from "@/components/shared/ChatBotButton";
+import SeoHead from "@/components/shared/SeoHead";
 
 // Define the solution card data
 const solutions = [
@@ -95,6 +96,13 @@ const solutions = [
 const Solutions = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <SeoHead
+        title=" AI-Powered Hiring Solutions | Disamina AI"
+        description=" Explore Disamina AI’s suite of smart hiring solutions including resume screening, assessments, proctoring, and automated interviews."
+        keywords=" hiring solutions, AI hiring tools, recruitment automation solutions
+
+"
+      />
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
@@ -106,7 +114,8 @@ const Solutions = () => {
                 Our comprehensive suite of AI tools streamlines every step of your hiring process
               </p>
               <Link to="/contact#contact">
-                <Button size="lg" className="bg-white text-primary hover:bg-gray-100">
+                <Button size="lg" className="bg-gradient-blend  hover:opacity-90 text-white text-[17px] py-6 px-8 transform transition-transform hover:scale-105" 
+                >
                   Book a Demo
                 </Button>
               </Link>

@@ -9,9 +9,9 @@ import Footer from "@/components/layout/Footer";
 const PsychometricTests = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-indigo-50 to-white">
     <SeoHead
-      title="Psychometric Assessment Tests"
-      description="Reveal personality traits, motivation, and culture fit with science-backed psychometric assessments for better hiring decisions."
-      keywords="psychometric test, personality assessment, culture fit, motivation test, leadership style, work style assessment"
+      title="Online Psychometric Tests for Hiring | Disamina AI"
+      description="Measure personality, behavior, and cognitive traits of candidates with AI-driven psychometric tests."
+      keywords="psychometric testing, candidate behavior test, personality assessment"
     />
     <Navbar />
     <div className="container mx-auto py-12 md:py-20 animate-fade-in">
