@@ -49,7 +49,7 @@ const AIProctoring = () => (
       <div className="bg-blue-100 rounded-xl p-8 text-center animate-fade-in">
         <h3 className="text-2xl font-bold mb-2 text-blue-900">Ready to enhance your exam security?</h3>
         <p className="mb-4 text-gray-700 text-lg">Discover how AI proctoring can safeguard your assessments and maintain fairness—scaling effortlessly for remote and in-person exams.</p>
-        <Link to="https://portal.disamina.ai/signup" target="_blank" rel="noopener noreferrer">
+        <Link to="https://portal.disamina.ai/signin" target="_blank" rel="noopener noreferrer">
 
           <Button size="lg" className="bg-primary text-white hover:bg-primary/90 shadow-lg transition-colors">Try AI Proctoring</Button>
         </Link>

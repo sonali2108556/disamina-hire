@@ -30,6 +30,8 @@ import BehavioralTests from "./pages/assessments/BehavioralTests";
 import CommunicationSkillsTest from "./pages/assessments/CommunicationSkillsTest";
 import ScrollToTop from "./components/layout/ScrollToTop";
 import AIProctoring from "./pages/solutions/AIProctoring";
+import PrivacyPolicy from "./pages/legal/Privacy";
+import TermsOfUse from "./pages/legal/Terms";
 
 const queryClient = new QueryClient();
 
@@ -64,9 +66,12 @@ const App = () => (
               <Route path="/assessments/communication" element={<CommunicationSkillsTest />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/careers" element={<PlaceholderPage />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
+              <Route path="/terms" element={<TermsOfUse />} />
+
+              {/* <Route path="/careers" element={<PlaceholderPage />} /> */}
               {/* Additional solution pages */}
-              <Route path="/solutions/:solutionId" element={<PlaceholderPage />} />
+              {/* <Route path="/solutions/:solutionId" element={<PlaceholderPage />} /> */}
               <Route path="*" element={<NotFound />} />
             </Routes>
           </ScrollToTop>

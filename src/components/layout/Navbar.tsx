@@ -37,7 +37,7 @@ const Navbar = () => {
 
       ]
     },
-    { name: "Resources", href: "/resources", type: "item" },
+    { name: "Resources", href: "https://disamina.substack.com/", type: "item" },
   ];
 
   return (
@@ -107,7 +107,7 @@ const Navbar = () => {
                   Candidate Login
                 </Button>
               </Link>
-              <a href="https://portal.disamina.ai/signup" target="_blank" rel="noreferrer noopener">
+              <a href="https://portal.disamina.ai/signin" target="_blank" rel="noreferrer noopener">
                 <Button className="bg-primary hover:bg-primary-dark text-white">
                   Employer Login
                 </Button>
@@ -145,12 +145,12 @@ const Navbar = () => {
                 </Link>
               ))}
               <div className="flex flex-col space-y-3 pt-4">
-                <Link to="https://portal.disamina.ai/candidate/login" target="_blank" rel="noopener noreferrer">
+                <a href="https://portal.disamina.ai/candidate/login" target="_blank" rel="noreferrer noopener">
                   <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white w-full">
                     Candidate Login
                   </Button>
-                </Link>
-                <a href="https://portal.disamina.ai/signup" target="_blank" rel="noreferrer noopener">
+                </a>
+                <a href="https://portal.disamina.ai/signin" target="_blank" rel="noreferrer noopener">
                   <Button className="bg-primary hover:bg-primary-dark text-white w-full">
                     Employer Login
                   </Button>

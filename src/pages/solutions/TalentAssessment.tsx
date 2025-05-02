@@ -58,7 +58,7 @@ const TalentAssessment = () => (
       <div className="bg-green-100 rounded-xl p-8 text-center animate-fade-in">
         <h3 className="text-2xl font-bold mb-2 text-green-900">Start Assessing Talent with Precision</h3>
         <p className="mb-4 text-lg text-gray-700">Choose from 100+ templates or design your own assessment in minutes.</p>
-        <Link to="https://portal.disamina.ai/signup" target="_blank" rel="noopener noreferrer">
+        <Link to="https://portal.disamina.ai/signin" target="_blank" rel="noopener noreferrer">
           <Button size="lg" className="bg-primary text-white hover:bg-primary/90 shadow-lg">Explore Assessments</Button>
         </Link>
       </div>

@@ -58,7 +58,7 @@ const AIJDGenerator = () => (
       <div className="bg-indigo-100 rounded-xl p-8 text-center animate-fade-in">
         <h3 className="text-2xl font-bold mb-2 text-indigo-900">Revolutionize your job postings</h3>
         <p className="mb-4 text-lg text-gray-700">Let the power of AI craft the perfect JD for any position.</p>
-        <Link to="https://portal.disamina.ai/signup" target="_blank" rel="noopener noreferrer">
+        <Link to="https://portal.disamina.ai/signin" target="_blank" rel="noopener noreferrer">
           <Button size="lg" className="bg-primary text-white hover:bg-primary/90 shadow-lg">Generate Job Description</Button>
         </Link>
       </div>

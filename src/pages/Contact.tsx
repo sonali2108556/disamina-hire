@@ -351,11 +351,14 @@ const Contact = () => {
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               Transform your hiring process with Disamina AI's AI-powered solutions.
             </p>
-            <a href="/contact#contact" >
-              <Button size="lg" className="bg-white text-primary hover:bg-gray-100">
-                Book a Demo Today
-              </Button>
-            </a>
+            <Button onClick={() => {
+              window.Calendly.initPopupWidget({
+                url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+              });
+              return false;
+            }} size="lg" className="bg-white text-primary hover:bg-gray-100">
+              Book a Demo Today
+            </Button>
           </div>
         </section>
       </main>

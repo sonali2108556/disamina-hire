@@ -40,8 +40,8 @@ const Footer = () => {
       title: "Company",
       links: [
         { name: "About Us", href: "/about" },
-        { name: "Careers", href: "/careers" },
-        { name: "Resources", href: "/resources" },
+        { name: "Careers", href: "/" },
+        { name: "Resources", href: "https://disamina.substack.com/" },
         { name: "Contact Us", href: "/contact" },
         { name: "Privacy Policy", href: "/privacy" },
         { name: "Terms of Use", href: "/terms" },
@@ -64,9 +64,9 @@ const Footer = () => {
             <div className="mb-6">
               <img src={msLogo} alt="Disamina" className="h-[140px]" />
             </div>
-            <div className="flex space-x-4">
-              <a
-                href="https://www.facebook.com/disamina.in"
+            <div className="flex space-x-4 align-center">
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://www.facebook.com/disaminaAI/"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 <svg
@@ -82,8 +82,8 @@ const Footer = () => {
                   />
                 </svg>
               </a>
-              <a
-                href="#"
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://www.instagram.com/disamina.ai/"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 <svg
@@ -99,8 +99,8 @@ const Footer = () => {
                   />
                 </svg>
               </a>
-              <a
-                href="https://www.youtube.com/channel/UCnWWeF5c-c-E1b3C1bB68Ww"
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://www.youtube.com/@disamina-ai"
                 className="text-gray-400 hover:text-primary transition-colors"
               >
                 <svg
@@ -116,6 +116,16 @@ const Footer = () => {
                   />
                 </svg>
               </a>
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://www.linkedin.com/company/disamina"
+                className="text-gray-400 hover:text-primary transition-colors"
+              >
+                <svg className="h-6 w-6 mt-1"
+                  fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                </svg>
+              </a>
+
             </div>
           </div>
 

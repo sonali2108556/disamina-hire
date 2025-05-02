@@ -7,7 +7,6 @@ import Hero from "@/components/home/Hero";
 import FeaturesStrip from "@/components/home/FeaturesStrip";
 import HowItWorks from "@/components/home/HowItWorks";
 import Testimonials from "@/components/home/Testimonials";
-import LiveDemo from "@/components/home/LiveDemo";
 import ChatBotButton from "@/components/shared/ChatBotButton";
 import SeoHead from "@/components/shared/SeoHead";
 import { ArrowRight } from "lucide-react";
@@ -19,8 +18,8 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <SeoHead 
-        title="Best AI Hiring Platform for Employers | Disamina AI" 
+      <SeoHead
+        title="Best AI Hiring Platform for Employers | Disamina AI"
         description="Discover Disamina AI—an all-in-one hiring solution for employers to post jobs, screen resumes, conduct assessments, and interview candidates faster using AI."
         keywords="AI hiring platform, hire with AI, recruitment automation"
       />
@@ -29,7 +28,7 @@ const Index = () => {
         <Hero />
         <FeaturesStrip />
         <HowItWorks />
-        
+
         {/* Stats Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4 md:px-6">
@@ -48,10 +47,9 @@ const Index = () => {
             </div>
           </div>
         </section>
-        
+
         <Testimonials />
-        {/* <LiveDemo /> */}
-        
+
         {/* CTA Section */}
         <section className="py-20 bg-gradient-blend text-white text-center">
           <div className="container mx-auto px-4 md:px-6">
@@ -62,22 +60,25 @@ const Index = () => {
               Join thousands of companies that are hiring faster and smarter with Disamina AI.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link to="/contact#contact">
-              <Button size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg">
+              <Button onClick={() => {
+                window.Calendly.initPopupWidget({
+                  url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                });
+                return false;
+              }} size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg">
                 Book a Demo
               </Button>
-              </Link>
-              <a href="https://portal.disamina.ai/signup" target="_blank" rel="noreferrer noopener">
-              <Button size="lg" className="bg-secondary hover:bg-secondary-dark text-white text-lg">
-                Start Free Trial
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+              <a href="https://portal.disamina.ai/signin" target="_blank" rel="noreferrer noopener">
+                <Button size="lg" className="bg-secondary hover:bg-secondary-dark text-white text-lg">
+                  Start Free Trial
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
               </a>
             </div>
           </div>
         </section>
       </main>
-      
+
       <Footer />
       <ChatBotButton />
     </div>

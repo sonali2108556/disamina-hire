@@ -40,7 +40,7 @@ const SeoHead = ({
       
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@recruit_faster" />
+      <meta name="twitter:site" content="@DisaminaAI" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />

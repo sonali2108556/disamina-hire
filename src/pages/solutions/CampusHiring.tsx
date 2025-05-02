@@ -58,7 +58,7 @@ const CampusHiring = () => (
       <div className="bg-orange-100 rounded-xl p-8 text-center animate-fade-in">
         <h3 className="text-2xl font-bold mb-2 text-orange-900">Plan the Ultimate Campus Drive</h3>
         <p className="mb-4 text-lg text-gray-700">Discover how our AI can scale your campus outreach and quality of hires.</p>
-        <Link to="https://portal.disamina.ai/signup" target="_blank" rel="noopener noreferrer">
+        <Link to="https://portal.disamina.ai/signin" target="_blank" rel="noopener noreferrer">
           <Button size="lg" className="bg-primary text-white hover:bg-primary/90 shadow-lg">Plan Your Drive</Button>
         </Link>
       </div>

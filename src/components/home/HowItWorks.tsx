@@ -114,7 +114,7 @@ const HowItWorks = () => {
         {/* CTA Section */}
         <div className="mt-16 md:mt-24 text-center">
           <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Hiring Process?</h3>
-          <a href="https://portal.disamina.ai/signup" target="_blank" rel="noreferrer noopener">
+          <a href="https://portal.disamina.ai/signin" target="_blank" rel="noreferrer noopener">
           <button className="btn-primary inline-flex items-center">
             Get Started Today
             <ArrowDown className="ml-2 h-4 w-4 animate-bounce" />

@@ -376,17 +376,20 @@ const Pricing = () => {
               Start your 14-day free trial today. No credit card required.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://portal.disamina.ai/signup" target="_blank" rel="noreferrer noopener">
+              <a href="https://portal.disamina.ai/signin" target="_blank" rel="noreferrer noopener">
 
                 <Button size="lg" className="bg-white text-primary hover:bg-white-10">
                   Start Free Trial
                 </Button>
               </a>
-              <Link to="/contact#contact">
-                <Button size="lg" variant="outline" className="border-white text-primary hover:bg-white/10  hover:text-white">
-                  Book a Demo
-                </Button>
-              </Link>
+              <Button onClick={() => {
+                window.Calendly.initPopupWidget({
+                  url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                });
+                return false;
+              }} size="lg" variant="outline" className="border-white text-primary hover:bg-white/10  hover:text-white">
+                Book a Demo
+              </Button>
             </div>
           </div>
         </section>

@@ -175,7 +175,6 @@ const ForCandidates = () => {
                 <div className="bg-gray-200 rounded-xl aspect-video flex items-center justify-center">
                   <div className="text-center p-8">
                     <p className="text-gray-500 mb-2">Interview Simulation Preview</p>
-                    {/* <Button variant="outline">Watch Demo</Button> */}
                   </div>
                 </div>
               </div>

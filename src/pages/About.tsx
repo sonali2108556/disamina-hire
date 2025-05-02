@@ -11,8 +11,8 @@ import SeoHead from "@/components/shared/SeoHead";
 const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <SeoHead 
-        title=" About Disamina AI | Transforming Hiring with Smart Technology" 
+      <SeoHead
+        title=" About Disamina AI | Transforming Hiring with Smart Technology"
         description=" Learn about Disamina AI’s mission to simplify recruitment through AI-driven assessments, resume screening, and intelligent hiring tools."
         keywords="about Disamina AI, AI hiring company, recruitment tech startup"
       />
@@ -266,11 +266,21 @@ const About = () => {
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               Join hundreds of companies that have revolutionized their recruitment process with Disamina AI.
             </p>
-            <Link to="https://portal.disamina.ai/signup" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg py-6 px-8">
-                Book a Demo With Us
-              </Button>
-            </Link>
+
+            <Button
+              onClick={() => {
+                window.Calendly.initPopupWidget({
+                  url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                });
+                return false;
+              }}
+              size="lg"
+              className="bg-white text-primary hover:bg-gray-100 text-lg py-6 px-8"
+            >
+              Book a Demo With Us
+            </Button>
+
+
           </div>
         </section>
       </main>

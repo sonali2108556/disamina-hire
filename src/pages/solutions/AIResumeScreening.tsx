@@ -49,7 +49,7 @@ const AIResumeScreening = () => (
       <div className="bg-blue-100 rounded-xl p-8 text-center animate-fade-in">
         <h3 className="text-2xl font-bold mb-2 text-blue-900">Ready to simplify your screening process?</h3>
         <p className="mb-4 text-gray-700 text-lg">Discover how AI can help you select top candidates in minutes, not days.</p>
-        <Link to="https://portal.disamina.ai/signup" target="_blank" rel="noopener noreferrer">
+        <Link to="https://portal.disamina.ai/signin" target="_blank" rel="noopener noreferrer">
 
           <Button size="lg" className="bg-primary text-white hover:bg-primary/90 shadow-lg transition-colors">Try Resume Screening</Button>
         </Link>

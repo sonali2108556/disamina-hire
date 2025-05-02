@@ -58,7 +58,7 @@ const PersonalizedCareerPage = () => (
       <div className="bg-purple-100 rounded-xl p-8 text-center animate-fade-in">
         <h3 className="text-2xl font-bold mb-2 text-purple-900">Double your applicant engagement</h3>
         <p className="mb-4 text-lg text-gray-700">Transform your company's career page in days, not weeks.</p>
-        <Link to="https://portal.disamina.ai/signup" target="_blank" rel="noopener noreferrer">
+        <Link to="https://portal.disamina.ai/signin" target="_blank" rel="noopener noreferrer">
 
           <Button size="lg" className="bg-primary text-white hover:bg-primary/90 shadow-lg">Get Your Career Page</Button>
         </Link>

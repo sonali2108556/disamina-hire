@@ -10,7 +10,16 @@ const testimonials = [
     title: "Engineering - IT & Smart Systems (R&D)",
     company: "Information Technology and Services",
     rating: 5
+  },
+  {
+    id: 2,
+    quote: "Very satisfied with the work done by Disamina. He really knows how to treat his clients and how to solve all the doubts and concerns that arise. \nDisamina delivers outstanding service with a strong focus on client satisfaction, professionalism, and effective problem-solving. Highly recommended for its exceptional quality and reliability.",
+    author: "Valentina G.",
+    title: "Web Designer",
+    company: "Non-Profit Organization Management",
+    rating: 5
   }
+
 ];
 
 const Testimonials = () => {

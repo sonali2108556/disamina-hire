@@ -58,7 +58,7 @@ const CodingAssessment = () => (
       <div className="bg-yellow-100 rounded-xl p-8 text-center animate-fade-in">
         <h3 className="text-2xl font-bold mb-2 text-yellow-900">Build world-class tech teams</h3>
         <p className="mb-4 text-lg text-gray-700">Launch a coding assessment in less than 5 minutes.</p>
-        <Link to="https://portal.disamina.ai/signup" target="_blank" rel="noopener noreferrer">
+        <Link to="https://portal.disamina.ai/signin" target="_blank" rel="noopener noreferrer">
           <Button size="lg" className="bg-primary text-white hover:bg-primary/90 shadow-lg">Create Coding Test</Button>
         </Link>
       </div>

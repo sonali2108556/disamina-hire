@@ -115,10 +115,10 @@ const Assessments = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <SeoHead
-      title="Skill Assessments for Hiring | Disamina AI"
-      description="Assess candidates with job-specific skill tests designed by experts and powered by AI to ensure accurate evaluation."
-      keywords="role-based assessments, skill testing, job-specific evaluations"
-    />
+        title="Skill Assessments for Hiring | Disamina AI"
+        description="Assess candidates with job-specific skill tests designed by experts and powered by AI to ensure accurate evaluation."
+        keywords="role-based assessments, skill testing, job-specific evaluations"
+      />
       <Navbar />
       <main className="flex-grow">
         <section className="bg-gradient-primary text-white py-20 md:py-28">
@@ -313,7 +313,7 @@ const Assessments = () => {
                   </div>
                 </div>
 
-                <Link to="https://portal.disamina.ai/signup" target="_blank" rel="noopener noreferrer">
+                <Link to="https://portal.disamina.ai/signin" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="bg-primary hover:bg-primary-dark text-white">
                     Learn More
                   </Button>
@@ -374,16 +374,19 @@ const Assessments = () => {
               Start using our AI-powered assessments to identify top talent with precision.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="https://portal.disamina.ai/signup" target="_blank" rel="noreferrer noopener">
+              <a href="https://portal.disamina.ai/signin" target="_blank" rel="noreferrer noopener">
                 <Button size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg py-6 px-8">
                   Get Started
                 </Button>
               </a>
-              <Link to="/contact#contact">
-                <Button size="lg" variant="outline" className="border-white text-primary hover:text-white hover:bg-white/10 text-lg py-6 px-8">
-                  Schedule Demo
-                </Button>
-              </Link>
+              <Button onClick={() => {
+                window.Calendly.initPopupWidget({
+                  url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                });
+                return false;
+              }} size="lg" variant="outline" className="border-white text-primary hover:text-white hover:bg-white/10 text-lg py-6 px-8">
+                Schedule Demo
+              </Button>
             </div>
           </div>
         </section>
@@ -443,7 +446,7 @@ const AssessmentCard = ({ assessment }: { assessment: any }) => {
         </div>
       </CardContent>
       <CardFooter className="border-t pt-4">
-        <Link to="https://portal.disamina.ai/signup" target="_blank" rel="noopener noreferrer" className="w-[100%]">
+        <Link to="https://portal.disamina.ai/signin" target="_blank" rel="noopener noreferrer" className="w-[100%]">
           <Button className="w-full">View Details</Button>
         </Link>
       </CardFooter>
