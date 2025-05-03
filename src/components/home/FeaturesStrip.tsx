@@ -2,11 +2,17 @@ import { useState, useEffect } from "react";
 import { Check, CircleUser, Brain, BookCheck, Video, School, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
+import careerImage from "@/assets/images/Job Posting.jpg";
+import screening from "@/assets/images/AI Screening.webp";
+import assessment from "@/assets/images/AI_Assessment.webp";
+import proctoring from "@/assets/images/AI_Proctoring.webp";
+import interview from "@/assets/images/Video Interview.jpg";
+import hiring from "@/assets/images/campus Hiring.jpg";
 
 const features = [
   {
     id: "career-page",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=650&q=80",
+    image: careerImage,
     href: "/solutions/career-page",
     title: "Career Page",
     icon: <CircleUser className="h-6 w-6" />,
@@ -21,7 +27,7 @@ const features = [
   },
   {
     id: "ai-screening",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80",
+    image: screening,
     href: "/solutions/ai-screening",
     title: "AI Screening",
     icon: <Brain className="h-6 w-6" />,
@@ -36,7 +42,7 @@ const features = [
   },
   {
     id: "talent-assessments",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=550&q=80",
+    image: assessment,
     href: "/solutions/talent-assessment",
     title: "Talent Assessments",
     icon: <BookCheck className="h-6 w-6" />,
@@ -51,7 +57,7 @@ const features = [
   },
   {
     id: "ai-proctoring",
-    image: "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: proctoring,
     href: "/solutions/ai-proctoring",
     title: "AI Proctoring",
     icon: <Check className="h-6 w-6" />,
@@ -66,7 +72,7 @@ const features = [
   },
   {
     id: "video-interviews",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=510&q=80",
+    image: interview,
     href: "/solutions/video-interview",
     title: "Video Interviews",
     icon: <Video className="h-6 w-6" />,
@@ -81,7 +87,7 @@ const features = [
   },
   {
     id: "campus-hiring",
-    image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=410&q=80",
+    image: hiring,
     href: "/solutions/campus-hiring",
     title: "Campus Hiring",
     icon: <School className="h-6 w-6" />,
@@ -178,7 +184,7 @@ const FeaturesStrip = () => {
 
               <div className="bg-gray-100 rounded-lg flex items-center justify-center min-h-[300px]">
                 {/* Placeholder for feature illustration/screenshot */}
-                <img src={currentFeature.image} className="h-[340px] w-[100%]"/>
+                <img src={currentFeature.image} className="h-[340px] w-[100%]" />
                 {/* <div className="text-center p-6">
                   <div className="mx-auto w-16 h-16 mb-4 bg-primary/20 rounded-full flex items-center justify-center">
                     {currentFeature.icon}

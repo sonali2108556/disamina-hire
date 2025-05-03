@@ -58,7 +58,7 @@ const Footer = () => {
             <Link to="/" className="inline-block mb-6">
               <img src={logo} alt="Disamina" width="130px" />
             </Link>
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-6 text-sm">
               AI-powered hiring assistant that helps you hire faster, smarter, and better.
             </p>
             <div className="mb-6">
@@ -131,13 +131,13 @@ const Footer = () => {
 
           {footerLinks.map((group) => (
             <div key={group.title}>
-              <h3 className="font-semibold text-gray-900 mb-4">{group.title}</h3>
-              <ul className="space-y-3">
+              <h3 className="font-semibold text-gray-900 text-lg">{group.title}</h3>
+              <ul className="space-y-1">
                 {group.links.map((link) => (
                   <li key={link.name}>
                     <Link
                       to={link.href}
-                      className="text-gray-600 hover:text-primary transition-colors"
+                      className="text-gray-600 hover:text-primary transition-colors text-sm"
                     >
                       {link.name}
                     </Link>

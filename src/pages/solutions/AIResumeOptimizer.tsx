@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/shared/SeoHead";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import jd from "@/assets/images/Screening.jpg";
 
 const AIResumeOptimizer = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-pink-50 to-white">
@@ -48,7 +49,7 @@ const AIResumeOptimizer = () => (
         </div>
         <div className="flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=500&q=80"
+            src={jd}
             alt="Resume Optimizer"
             className="rounded-xl shadow-lg object-cover w-full max-h-[350px] border-4 border-pink-100"
             loading="lazy"

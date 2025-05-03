@@ -25,28 +25,28 @@ const PrivacyPolicy = () => {
             </p>
 
             <section className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">Personal Information</h2>
+              <h2 className="text-lg font-semibold text-gray-800 mb-2">Personal Information</h2>
               <p className="mb-2">
                 We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, register, place an order, fill out a form, or engage in other activities. Users may be asked for details such as name, email address, mailing address, and phone number. Users can visit the site anonymously and may refuse to supply personal information, but this may limit certain activities.
               </p>
             </section>
 
             <section className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">Non-Personal Information</h2>
+              <h2 className="text-lg font-semibold text-gray-800 mb-2">Non-Personal Information</h2>
               <p className="mb-2">
                 We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Sites, such as the operating system and the Internet service providers utilized and other similar information.
               </p>
             </section>
 
             <section className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">Cookies</h2>
+              <h2 className="text-lg font-semibold text-gray-800 mb-2">Cookies</h2>
               <p className="mb-2">
                 Our Site may use “cookies” to enhance User experience. User’s web browsers place cookies on their hard drive for record-keeping purposes and sometimes to track information about them. The user may choose to set their web browser to refuse cookies or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly.
               </p>
             </section>
 
             <section className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">Use of Collected Information</h2>
+              <h2 className="text-lg font-semibold text-gray-800 mb-2">Use of Collected Information</h2>
               <p className="mb-2">
                 Disamina may collect and use Users personal information for the following purposes:
               </p>
@@ -70,28 +70,28 @@ const PrivacyPolicy = () => {
             </section>
 
             <section className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">Protecting Your Information</h2>
+              <h2 className="text-lg font-semibold text-gray-800 mb-2">Protecting Your Information</h2>
               <p className="mb-2">
                 We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.
               </p>
             </section>
 
             <section className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">Information Sharing</h2>
+              <h2 className="text-lg font-semibold text-gray-800 mb-2">Information Sharing</h2>
               <p className="mb-2">
                 We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above.
               </p>
             </section>
 
             <section className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">Links to Third-Party Websites</h2>
+              <h2 className="text-lg font-semibold text-gray-800 mb-2">Links to Third-Party Websites</h2>
               <p className="mb-2">
                 Users may find advertising or other content on our Site that link to the sites and services of our partners, suppliers, advertisers, sponsors, licensors and other third parties. We do not control the content or links that appear on these sites and are not responsible for the practices employed by websites linked to or from our Site. In addition, these sites or services, including their content and links, may be constantly changing. These sites and services may have their own privacy policies and customer service policies. Browsing and interaction on any other website, including websites which have a link to our Site, is subject to that website’s own terms and policies.
               </p>
             </section>
 
             <section className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">Changes to This Privacy Policy</h2>
+              <h2 className="text-lg font-semibold text-gray-800 mb-2">Changes to This Privacy Policy</h2>
               <p className="mb-2">
                 Disamina has the discretion to update this privacy policy at any time. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.
               </p>
@@ -104,14 +104,14 @@ const PrivacyPolicy = () => {
             </section>
 
             <section className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">Acceptance of This Policy</h2>
+              <h2 className="text-lg font-semibold text-gray-800 mb-2">Acceptance of This Policy</h2>
               <p className="mb-2">
                 By using this Site, you accept this policy. If you do not agree, please do not use the Site. Continued use following changes to this policy will signify acceptance.
               </p>
             </section>
 
             <section className="mb-6">
-              <h2 className="text-2xl font-semibold mb-2">Contact Us</h2>
+              <h2 className="text-lg font-semibold text-gray-800 mb-2">Contact Us</h2>
               <p className="mb-2">
                 If you have any questions about this Privacy Policy, please contact us at:
               </p>

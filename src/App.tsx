@@ -32,6 +32,7 @@ import ScrollToTop from "./components/layout/ScrollToTop";
 import AIProctoring from "./pages/solutions/AIProctoring";
 import PrivacyPolicy from "./pages/legal/Privacy";
 import TermsOfUse from "./pages/legal/Terms";
+import DeleteMyData from "./pages/legal/DeleteMyData";
 
 const queryClient = new QueryClient();
 
@@ -68,6 +69,7 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/terms" element={<TermsOfUse />} />
+              <Route path="/delete-my-data" element={<DeleteMyData />} />
 
               {/* <Route path="/careers" element={<PlaceholderPage />} /> */}
               {/* Additional solution pages */}

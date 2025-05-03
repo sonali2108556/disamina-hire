@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/shared/SeoHead";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import proctoring from "@/assets/images/AI_Proctoring.webp";
 
 const AIProctoring = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-white">
@@ -19,7 +20,7 @@ const AIProctoring = () => (
         <div>
           <h2 className="text-4xl font-bold mb-5">Proctor Exams Securely and Efficiently with AI</h2>
           <p className="text-lg mb-7 text-gray-700">
-          Our advanced AI-driven proctoring solution ensures the integrity of your exams by monitoring and analyzing test-taker behavior in real time, giving you peace of mind and protecting the credibility of your assessments.
+            Our advanced AI-driven proctoring solution ensures the integrity of your exams by monitoring and analyzing test-taker behavior in real time, giving you peace of mind and protecting the credibility of your assessments.
           </p>
           <ul className="mb-7 space-y-3 text-base">
             <li>
@@ -38,7 +39,7 @@ const AIProctoring = () => (
         </div>
         <div className="flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1674027444485-cec3da58eef4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src={proctoring}
             alt="Resume Screening"
             className="rounded-xl shadow-lg object-cover w-full max-h-[350px] border-4 border-blue-100"
             loading="lazy"

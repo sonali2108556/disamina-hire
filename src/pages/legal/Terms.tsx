@@ -1,7 +1,6 @@
 import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import SeoHead from "@/components/shared/SeoHead";
-import React from "react";
 
 const TermsOfUse = () => {
   return (
@@ -32,7 +31,7 @@ const TermsOfUse = () => {
               incorporated by reference into these Terms.
             </p>
 
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               Cookies and Web Beacons
             </h2>
             <p className="mb-4">
@@ -51,7 +50,7 @@ const TermsOfUse = () => {
               ALL OF THE PROVISION OF THESE TERMS, DO NOT LOG INTO AND/OR USE THE SITE.
             </p>
 
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               1. Description of Service
             </h2>
             <p className="mb-4">
@@ -64,7 +63,7 @@ const TermsOfUse = () => {
               user account and if you choose to do so, you can publish and share such content.
             </p>
 
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               2. Account Responsibilities
             </h2>
             <ul className="list-disc ml-6 mb-4">
@@ -75,7 +74,7 @@ const TermsOfUse = () => {
                 You are responsible for maintaining the confidentiality of your Account login information and are fully responsible for all activities that occur under your Account. You approve to immediately notify the Company of any unauthorized use, or suspected unauthorized use of your Account.  Company cannot and will not be liable for any loss or damage arising from your failure to comply with the above requirements.
               </li>
             </ul>
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               3. Access to the Site
             </h2>
             <ul className="list-disc ml-6 mb-4">
@@ -92,7 +91,7 @@ const TermsOfUse = () => {
                 Excluding any User Content that you may provide, you are aware that all the intellectual property rights, including copyrights, patents, trademarks, and trade secrets, in the Site and its content are owned by Company or Company’s suppliers. Note that these Terms and access to the Site do not give you any rights, title or interest in or to any intellectual property rights, except for the limited access rights expressed in Section 2.1. Company and its suppliers reserve all rights not granted in these Terms.
               </li>
             </ul>
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               4. User Content
             </h2>
             <ul className="list-disc ml-6 mb-4">
@@ -103,7 +102,7 @@ const TermsOfUse = () => {
                 You hereby grant to Company an irreversible, non-exclusive, royalty-free and fully paid, worldwide license to reproduce, distribute, publicly display and perform, prepare derivative works of, incorporate into other works, and otherwise use and exploit your User Content, and to grant sublicenses of the foregoing rights, solely for the purposes of including your User Content in the Site.  You hereby irreversibly waive any claims and assertions of moral rights or attribution with respect to your User Content.
               </li>
             </ul>
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               5. Acceptable Use Policy
             </h2>
             <p className="mb-4">The following terms constitute our “Acceptable Use Policy”:</p>
@@ -128,7 +127,7 @@ const TermsOfUse = () => {
 
               </li>
             </ul>
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               6. Third-Party Links & Ads; Other Users
             </h2>
             <ul className="list-disc ml-6 mb-4">
@@ -142,13 +141,13 @@ const TermsOfUse = () => {
                 You hereby release and forever discharge the Company and our officers, employees, agents, successors, and assigns from, and hereby waive and relinquish, each and every past, present and future dispute, claim, controversy, demand, right, obligation, liability, action, and cause of action of every kind and nature, that has arisen or arises directly or indirectly out of, or that relates directly or indirectly to, the Site.
               </li>
             </ul>
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               7. Disclaimers
             </h2>
             <p className="mb-4">
               The site is provided on an “as-is” and “as available” basis, and company and our suppliers expressly disclaim any and all warranties and conditions of any kind, whether express, implied, or statutory, including all warranties or conditions of merchantability, fitness for a particular purpose, title, quiet enjoyment, accuracy, or non-infringement.  We and our suppliers make not guarantee that the site will meet your requirements, will be available on an uninterrupted, timely, secure, or error-free basis, or will be accurate, reliable, free of viruses or other harmful code, complete, legal, or safe.  If applicable law requires any warranties with respect to the site, all such warranties are limited in duration to ninety (90) days from the date of first use.
             </p>
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               8. Limitation on Liability
             </h2>
             <p className="mb-4">
@@ -161,14 +160,14 @@ const TermsOfUse = () => {
               Some jurisdictions do not allow the limitation or exclusion of liability for incidental or consequential damages, so the above limitation or exclusion may not apply to you.
             </p>
 
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               9. Term and Termination
             </h2>
             <p className="mb-4">
               Subject to this Section, these Terms will remain in full force and effect while you use the Site.  We may suspend or terminate your rights to use the Site at any time for any reason at our sole discretion, including for any use of the Site in violation of these Terms.  Upon termination of your rights under these Terms, your Account and right to access and use the Site will terminate immediately.  You understand that any termination of your Account may involve deletion of your User Content associated with your Account from our live databases.  The company will not have any liability whatsoever to you for any termination of your rights under these Terms.
             </p>
 
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               10. Copyright Policy
             </h2>
             <p className="mb-4">
@@ -197,7 +196,7 @@ const TermsOfUse = () => {
                 a statement that the information in the notification is accurate, and under penalty of perjury, that you are either the owner of the copyright that has allegedly been infringed or that you are authorized to act on behalf of the copyright owner.
               </li>
             </ul>
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               11. General
             </h2>
             <ul className="list-disc ml-6 mb-4">
@@ -206,14 +205,14 @@ const TermsOfUse = () => {
               <li>Entire Terms: These Terms constitute the entire agreement between you and us regarding the use of the Site. Our failure to exercise or enforce any right or provision of these Terms shall not operate as a waiver of such right or provision. The section titles in these Terms are for convenience only and have no legal or contractual effect. The word “including” means “including without limitation”. If any provision of these Terms is held to be invalid or unenforceable, the other provisions of these Terms will be unimpaired and the invalid or unenforceable provision will be deemed modified so that it is valid and enforceable to the maximum extent permitted by law.  Your relationship to Company is that of an independent contractor, and neither party is an agent or partner of the other.  These Terms, and your rights and obligations herein, may not be assigned, subcontracted, delegated, or otherwise transferred by you without Company’s prior written consent, and any attempted assignment, subcontract, delegation, or transfer in violation of the foregoing will be null and void.  The company may freely assign these Terms.  The terms and conditions set forth in these Terms shall be binding upon assignees.</li>
               <li>Copyright/Trademark Information: All trademarks, logos and service marks displayed on the Site are our property or the property of other third-parties. You are not permitted to use these Marks without our prior written consent or the consent of such third party which may own the Marks.</li>
             </ul>
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               12. Fees & Payments
             </h2>
             <p className="mb-4">
               The fees for Disamina’s products and services are based on the current price displayed on pricing page of Website or Billings page of application or on the written quotation/proposal. The price for customised version of Disamina will be shared in written in the form of proposal. The Exam Credits can be purchased on “Pay as you go” basis and is paid in advance. The price of pre-built assessments shall be paid as mentioned for each exam. The Customer may pay using our integrated payment gateway by accepted credit/debit cards, internet banking, and UPI. The Customer may also pay by means of direct bank transfer (NEFT/IMPS/RTGS/Wire Transfer). The Customer agree to provide the payment receipt for all types of direct bank transfer. Disamina reserves the right to change the subscription fee, exam price and to charge for use of Services that are currently available free of charge. You will not be charged for using any Service unless you have opted for a paid subscription plan. Any Additional services (e.g. third-party tools integration, customization to current software, Additional/Advance Server, Training, Support Services, etc.) delivered by Disamina will be charged extra and Customer agree to pay for such Services as per shared invoices. Non-payment of any due invoice may lead to suspension of User account.
             </p>
 
-            <h2 className="text-2xl font-semibold mb-2">
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">
               13. Cancellation & Refund Policy
             </h2>
             <ul className="list-disc ml-6">

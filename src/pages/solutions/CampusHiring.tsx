@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/shared/SeoHead";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import hiring from "@/assets/images/campus Hiring.jpg";
 
 const CampusHiring = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-orange-50 to-white">
@@ -48,7 +49,7 @@ const CampusHiring = () => (
         </div>
         <div className="flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=410&q=80"
+            src={hiring}
             alt="Campus Hiring"
             className="rounded-xl shadow-lg object-cover w-full max-h-[350px] border-4 border-orange-100"
             loading="lazy"

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/shared/SeoHead";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import screening from "@/assets/images/AI Screening.webp";
 
 const AIResumeScreening = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-white">
@@ -38,7 +39,7 @@ const AIResumeScreening = () => (
         </div>
         <div className="flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=600&q=80"
+            src={screening}
             alt="Resume Screening"
             className="rounded-xl shadow-lg object-cover w-full max-h-[350px] border-4 border-blue-100"
             loading="lazy"

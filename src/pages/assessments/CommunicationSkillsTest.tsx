@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/shared/SeoHead";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import jd from "@/assets/images/AI_Assessment.webp";
 
 const CommunicationSkillsTest = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-pink-50 to-white">
@@ -38,7 +39,7 @@ const CommunicationSkillsTest = () => (
         </div>
         <div className="flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=510&q=80"
+            src={jd}
             alt="Communication Skills Test"
             className="rounded-xl shadow-lg object-cover w-full max-h-[350px] border-4 border-pink-100"
             loading="lazy"
@@ -48,8 +49,8 @@ const CommunicationSkillsTest = () => (
       <div className="bg-pink-100 rounded-xl p-8 text-center animate-fade-in">
         <h3 className="text-2xl font-bold mb-2 text-pink-900">See Communication Skills in Action</h3>
         <p className="mb-4 text-lg text-gray-700">Instantly assess fluency, confidence, and clarity of your future hires.</p>
-        <Link to="https://portal.disamina.ai/signin" target="_blank" rel="noopener noreferrer"> 
-        <Button size="lg" className="bg-primary text-white hover:bg-primary/90 shadow-lg">Test My English</Button>
+        <Link to="https://portal.disamina.ai/signin" target="_blank" rel="noopener noreferrer">
+          <Button size="lg" className="bg-primary text-white hover:bg-primary/90 shadow-lg">Test My English</Button>
         </Link>
       </div>
     </div>

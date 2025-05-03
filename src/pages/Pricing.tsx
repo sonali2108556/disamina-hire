@@ -6,7 +6,6 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import ChatBotButton from "@/components/shared/ChatBotButton";
 import { Link } from "react-router-dom";
 
 const Pricing = () => {
@@ -395,7 +394,7 @@ const Pricing = () => {
         </section>
       </main>
       <Footer />
-      <ChatBotButton />
+      
     </div >
   );
 };

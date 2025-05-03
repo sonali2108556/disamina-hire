@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/shared/SeoHead";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import jd from "@/assets/images/AI_Assessment.webp";
 
 const PsychometricTests = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-indigo-50 to-white">
@@ -38,7 +39,7 @@ const PsychometricTests = () => (
         </div>
         <div className="flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=500&q=80"
+            src={jd}
             alt="Psychometric Tests"
             className="rounded-xl shadow-lg object-cover w-full max-h-[350px] border-4 border-indigo-100"
             loading="lazy"

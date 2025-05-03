@@ -1,8 +1,8 @@
 
-import { Check, ArrowDown } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import jobPost from "@/assets/images/Jobs-Post.png";
-import assess from "@/assets/images/talent-assessment.png";
-import onlineHire from "@/assets/images/online-hire.png";
+import screening from "@/assets/images/AI Screening.webp";
+import funnel from "@/assets/images/Funnel_NoBG_Disamina.png";
 
 const HowItWorks = () => {
   const steps = [
@@ -11,7 +11,7 @@ const HowItWorks = () => {
       title: "Post a Job / Add your JD",
       description:
         "Create a job posting or upload your existing job description. Our AI will analyze and optimize it for better candidate matching.",
-      image:jobPost,
+      image: jobPost,
       icon: "📋"
     },
     {
@@ -19,7 +19,7 @@ const HowItWorks = () => {
       title: "Disamina AI screens and assesses candidates",
       description:
         "Our AI technology automatically screens resumes, ranks candidates based on fit, and administers custom assessments.",
-      image:assess,
+      image: screening,
       icon: "🤖"
     },
     {
@@ -27,7 +27,7 @@ const HowItWorks = () => {
       title: "You hire top talent, fast",
       description:
         "Review AI-vetted candidates, conduct final interviews, and make data-driven hiring decisions in record time.",
-      image:onlineHire,
+      image: funnel,
       icon: "🚀"
     }
   ];
@@ -49,20 +49,18 @@ const HowItWorks = () => {
 
           <div className="space-y-12 md:space-y-24 relative">
             {steps.map((step, index) => (
-              <div 
+              <div
                 key={step.number}
-                className={`flex flex-col ${
-                  index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-                } items-center gap-8 md:gap-12`}
+                className={`flex flex-col ${index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+                  } items-center gap-8 md:gap-12`}
               >
                 {/* Step content */}
                 <div className="lg:w-5/12">
-                  <div 
-                    className={`text-sm font-semibold inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full ${
-                      index === 0 ? "bg-blue-50 text-primary" : 
-                      index === 1 ? "bg-purple-50 text-purple-600" : 
-                      "bg-green-50 text-green-600"
-                    }`}
+                  <div
+                    className={`text-sm font-semibold inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full ${index === 0 ? "bg-blue-50 text-primary" :
+                        index === 1 ? "bg-purple-50 text-purple-600" :
+                          "bg-green-50 text-green-600"
+                      }`}
                   >
                     <span>Step {step.number}</span>
                   </div>
@@ -81,28 +79,26 @@ const HowItWorks = () => {
                     ))}
                   </ul> */}
                 </div>
-                
+
                 {/* Center icon - visible only on lg screens */}
                 <div className="lg:w-2/12 relative hidden lg:block">
-                  <div 
-                    className={`absolute left-1/2 -translate-x-1/2 w-16 h-16 rounded-full flex items-center justify-center z-10 ${
-                      index === 0 ? "bg-blue-100 text-primary" : 
-                      index === 1 ? "bg-purple-100 text-purple-600" : 
-                      "bg-green-100 text-green-600"
-                    }`}
+                  <div
+                    className={`absolute left-1/2 -translate-x-1/2 w-16 h-16 rounded-full flex items-center justify-center z-10 ${index === 0 ? "bg-blue-100 text-primary" :
+                        index === 1 ? "bg-purple-100 text-purple-600" :
+                          "bg-green-100 text-green-600"
+                      }`}
                   >
                     <span className="text-2xl">{step.icon}</span>
                   </div>
                 </div>
-                
+
                 {/* Step illustration */}
                 <div className="lg:w-5/12">
-                  <div className={`bg-gray-100 rounded-lg aspect-video flex items-center justify-center ${
-                    index % 2 === 0 ? "lg:rounded-l-none" : "lg:rounded-r-none"
-                  }`}>
+                  <div className={`bg-gray-100 rounded-lg aspect-video flex items-center justify-center ${index % 2 === 0 ? "lg:rounded-l-none" : "lg:rounded-r-none"
+                    }`}>
                     {/* Placeholder for step illustration */}
                     <div className="text-center">
-                      <img src={step.image} className="h-60"/>
+                      <img src={step.image} className="h-60" />
                     </div>
                   </div>
                 </div>
@@ -115,10 +111,10 @@ const HowItWorks = () => {
         <div className="mt-16 md:mt-24 text-center">
           <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Hiring Process?</h3>
           <a href="https://portal.disamina.ai/signin" target="_blank" rel="noreferrer noopener">
-          <button className="btn-primary inline-flex items-center">
-            Get Started Today
-            <ArrowDown className="ml-2 h-4 w-4 animate-bounce" />
-          </button>
+            <button className="btn-primary inline-flex items-center">
+              Get Started Today
+              <ArrowDown className="ml-2 h-4 w-4 animate-bounce" />
+            </button>
           </a>
         </div>
       </div>

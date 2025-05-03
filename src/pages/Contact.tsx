@@ -8,7 +8,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent } from "@/components/ui/card";
-import ChatBotButton from "@/components/shared/ChatBotButton";
 import { useToast } from "@/hooks/use-toast";
 import SeoHead from "@/components/shared/SeoHead";
 
@@ -22,6 +21,7 @@ const Contact = () => {
     message: "",
     position: "",
     phone: "",
+    website: ''
   });
 
   const [loading, setLoading] = useState(false);
@@ -41,28 +41,41 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      setLoading(false);
-      toast({
-        title: "Message Sent!",
-        description: "We'll get back to you as soon as possible.",
-      });
+    var new_contact = {
+      "First name": (formData.name.split(" ")[0] || "").trim(),
+      "Last name": (formData.name.split(" ")[1] || "").trim(),
+      "Email": formData.email,
+      "Alternate contact number": formData.phone,
+      "company": {
+        "Name": formData.company,
+        "Website": formData.website
+      }
+    };
 
-      setFormData({
-        name: "",
-        email: "",
-        company: "",
-        subject: "",
-        message: "",
-        position: "",
-        phone: "",
-      });
-    }, 1500);
+    var identifier = new_contact.Email;
+    await window.fwcrm.identify(identifier, new_contact);
+
+    // Simulate form submission
+    setLoading(false);
+    toast({
+      title: "Message Sent!",
+      description: "We'll get back to you as soon as possible.",
+    });
+
+    setFormData({
+      name: "",
+      email: "",
+      company: "",
+      subject: "",
+      message: "",
+      position: "",
+      phone: "",
+      website: ""
+    });
   };
 
   return (
@@ -170,6 +183,19 @@ const Contact = () => {
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
+                      <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
+                        Organization Name *
+                      </label>
+                      <Input
+                        required
+                        id="company"
+                        name="company"
+                        value={formData.company}
+                        onChange={handleChange}
+                        placeholder="Enter your Organization name"
+                      />
+                    </div>
+                    <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                         Your Position *
                       </label>
@@ -182,35 +208,22 @@ const Contact = () => {
                         placeholder="Enter your position"
                       />
                     </div>
-                    <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                        Email Address *
-                      </label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        type="number"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        required
-                        placeholder="Enter your phone number"
-                      />
-                    </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
-                        Organization Name
+                      <label htmlFor="website" className="block text-sm font-medium text-gray-700 mb-1">
+                        Website *
                       </label>
                       <Input
-                        id="company"
-                        name="company"
-                        value={formData.company}
+                        required
+                        id="website"
+                        name="website"
+                        value={formData.website}
                         onChange={handleChange}
                         placeholder="Enter your Organization name"
                       />
                     </div>
-                    <div>
+                    {/* <div>
                       <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
                         Enquiry Type *
                       </label>
@@ -230,10 +243,10 @@ const Contact = () => {
                           <SelectItem value="partnership">Partnership Opportunity</SelectItem>
                         </SelectContent>
                       </Select>
-                    </div>
+                    </div> */}
                   </div>
 
-                  <div>
+                  {/* <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                       Tell us more about your query *
                     </label>
@@ -247,7 +260,7 @@ const Contact = () => {
                       placeholder="How can we help you?"
                       className="resize-none"
                     />
-                  </div>
+                  </div> */}
 
                   <Button type="submit" className="bg-primary hover:bg-primary-dark text-white px-8" disabled={loading}>
                     {loading ? (
@@ -363,7 +376,7 @@ const Contact = () => {
         </section>
       </main>
       <Footer />
-      <ChatBotButton />
+      
     </div>
   );
 };

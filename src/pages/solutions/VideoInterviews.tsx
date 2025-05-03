@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/shared/SeoHead";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import interview from "@/assets/images/Video Interview.jpg";
 
 const VideoInterviews = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-red-50 to-white">
@@ -49,7 +50,7 @@ const VideoInterviews = () => (
         </div>
         <div className="flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=510&q=80"
+            src={interview}
             alt="Video Interviews"
             className="rounded-xl shadow-lg object-cover w-full max-h-[350px] border-4 border-red-100"
             loading="lazy"

@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/shared/SeoHead";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import careerImage from "@/assets/images/Job Posting.jpg";
 
 const PersonalizedCareerPage = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-purple-50 to-white">
@@ -48,7 +49,7 @@ const PersonalizedCareerPage = () => (
         </div>
         <div className="flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=650&q=80"
+            src={careerImage}
             alt="Personalized Career Page"
             className="rounded-xl shadow-lg object-cover w-full max-h-[350px] border-4 border-purple-100"
             loading="lazy"

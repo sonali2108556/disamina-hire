@@ -5,7 +5,6 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import ChatBotButton from "@/components/shared/ChatBotButton";
 import SeoHead from "@/components/shared/SeoHead";
 
 // Define the solution card data
@@ -194,7 +193,7 @@ const Solutions = () => {
         </section>
       </main>
       <Footer />
-      <ChatBotButton />
+      
     </div>
   );
 };

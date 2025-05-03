@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import SeoHead from "@/components/shared/SeoHead";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import assessment from "@/assets/images/AI_Assessment.webp";
 
 const TalentAssessment = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-green-50 to-white">
@@ -48,7 +49,7 @@ const TalentAssessment = () => (
         </div>
         <div className="flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=550&q=80"
+            src={assessment}
             alt="Talent Assessment"
             className="rounded-xl shadow-lg object-cover w-full max-h-[350px] border-4 border-green-100"
             loading="lazy"

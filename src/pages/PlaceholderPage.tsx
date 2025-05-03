@@ -3,7 +3,6 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import ChatBotButton from "@/components/shared/ChatBotButton";
 import SeoHead from "@/components/shared/SeoHead";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -95,7 +94,7 @@ const PlaceholderPage = () => {
         </section>
       </main>
       <Footer />
-      <ChatBotButton />
+      
     </div>
   );
 };

@@ -7,7 +7,6 @@ import Hero from "@/components/home/Hero";
 import FeaturesStrip from "@/components/home/FeaturesStrip";
 import HowItWorks from "@/components/home/HowItWorks";
 import Testimonials from "@/components/home/Testimonials";
-import ChatBotButton from "@/components/shared/ChatBotButton";
 import SeoHead from "@/components/shared/SeoHead";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -80,7 +79,7 @@ const Index = () => {
       </main>
 
       <Footer />
-      <ChatBotButton />
+      
     </div>
   );
 };
