@@ -4,8 +4,15 @@ import Script from 'next/script';
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'AI Hiring Platform for Employers | Disamina AI',
-  description: 'Discover Disamina AI—an all-in-one hiring solution for employers. Post jobs, screen resumes, conduct assessments, and interview candidates faster with AI."',
+  title: 'Best AI Hiring Platform for Employers | Disamina AI',
+  description: 'Discover Disamina AI—an all-in-one hiring solution for employers. Post jobs, screen resumes, conduct assessments, and interview candidates faster with AI.',
+
+  openGraph: {
+    title: 'Best AI Hiring Platform for Employers | Disamina AI',
+    description: 'Discover Disamina AI—an all-in-one hiring solution for employers. Post jobs, screen resumes, conduct assessments, and interview candidates faster with AI.',
+    images: "/favicon.ico",
+    type: "website",
+  }
 }
 
 export default function RootLayout({
@@ -16,6 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="author" content="Disamina AI" />
+        <link rel="icon" type="image/png" href="/favicon.ico" />
         <link
           href="https://assets.calendly.com/assets/external/widget.css"
           rel="stylesheet"
@@ -23,20 +32,20 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        
+
         {/* Calendly Widget */}
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
           strategy="afterInteractive"
         />
-        
+
         {/* fw-cdn */}
         <Script
           src="https://fw-cdn.com/12191739/4678027.js"
           strategy="afterInteractive"
           data-chat="false"
         />
-        
+
         {/* Tawk.to live chat */}
         <Script id="tawk-init" strategy="afterInteractive">
           {`
