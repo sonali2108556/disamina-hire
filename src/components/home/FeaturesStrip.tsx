@@ -1,18 +1,12 @@
 import { useState, useEffect } from "react";
 import { Check, CircleUser, Brain, BookCheck, Video, School, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { Link } from "react-router-dom";
-import careerImage from "@/assets/images/Job Posting.jpg";
-import screening from "@/assets/images/AI Screening.webp";
-import assessment from "@/assets/images/AI_Assessment.webp";
-import proctoring from "@/assets/images/AI_Proctoring.webp";
-import interview from "@/assets/images/Video Interview.jpg";
-import hiring from "@/assets/images/campus Hiring.jpg";
+import Link from "next/link";
 
 const features = [
   {
     id: "career-page",
-    image: careerImage,
+    image: "images/Job Posting.jpg",
     href: "/solutions/career-page",
     title: "Career Page",
     icon: <CircleUser className="h-6 w-6" />,
@@ -27,7 +21,7 @@ const features = [
   },
   {
     id: "ai-screening",
-    image: screening,
+    image: "images/AI Screening.webp",
     href: "/solutions/ai-screening",
     title: "AI Screening",
     icon: <Brain className="h-6 w-6" />,
@@ -42,7 +36,7 @@ const features = [
   },
   {
     id: "talent-assessments",
-    image: assessment,
+    image: "images/AI_Assessment.webp",
     href: "/solutions/talent-assessment",
     title: "Talent Assessments",
     icon: <BookCheck className="h-6 w-6" />,
@@ -57,7 +51,7 @@ const features = [
   },
   {
     id: "ai-proctoring",
-    image: proctoring,
+    image: "images/AI_Proctoring.webp",
     href: "/solutions/ai-proctoring",
     title: "AI Proctoring",
     icon: <Check className="h-6 w-6" />,
@@ -72,7 +66,7 @@ const features = [
   },
   {
     id: "video-interviews",
-    image: interview,
+    image: "images/Video Interview.jpg",
     href: "/solutions/video-interview",
     title: "Video Interviews",
     icon: <Video className="h-6 w-6" />,
@@ -87,7 +81,7 @@ const features = [
   },
   {
     id: "campus-hiring",
-    image: hiring,
+    image: "images/campus Hiring.jpg",
     href: "/solutions/campus-hiring",
     title: "Campus Hiring",
     icon: <School className="h-6 w-6" />,
@@ -174,7 +168,7 @@ const FeaturesStrip = () => {
                     </li>
                   ))}
                 </ul>
-                <Link to={currentFeature.href}>
+                <Link href={currentFeature.href}>
                   <button className="mt-6 btn-primary inline-flex items-center">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4" />

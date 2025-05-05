@@ -1,6 +1,7 @@
+'use client';
 
-import { Helmet } from "react-helmet-async";
-import favicon from "@/assets/images/favicon.ico";
+import Head from "next/head";
+import { useEffect, useState } from "react";
 
 interface SeoHeadProps {
   title: string;
@@ -15,36 +16,41 @@ const SeoHead = ({
   description,
   keywords,
   canonicalUrl,
-  image = favicon,
+  image = "/images/favicon.ico",
 }: SeoHeadProps) => {
-  // Construct the full title with brand name
+  const [currentUrl, setCurrentUrl] = useState("");
+
+  useEffect(() => {
+    if (!canonicalUrl) {
+      setCurrentUrl(window.location.href);
+    }
+  }, [canonicalUrl]);
+
   const fullTitle = title;
-  const url = canonicalUrl || typeof window !== "undefined" ? window.location.href : "";
+  const url = canonicalUrl || currentUrl;
 
   return (
-    <Helmet>
+    <Head>
       {/* Standard SEO */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
-      
-      {/* Canonical URL */}
-      {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
-      
+      {url && <link rel="canonical" href={url} />}
+
       {/* Open Graph / Facebook */}
       <meta property="og:type" content="website" />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content={url} />
+      {url && <meta property="og:url" content={url} />}
       <meta property="og:image" content={image} />
-      
+
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@DisaminaAI" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
-    </Helmet>
+    </Head>
   );
 };
 

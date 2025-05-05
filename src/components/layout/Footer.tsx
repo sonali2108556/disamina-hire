@@ -1,7 +1,4 @@
-
-import { Link } from "react-router-dom";
-import logo from "@/assets/images/logo.png";
-import msLogo from "@/assets/images/ms-partner.png";
+import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -55,14 +52,14 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
           <div className="col-span-2">
-            <Link to="/" className="inline-block mb-6">
-              <img src={logo} alt="Disamina" width="130px" />
+            <Link href="/" className="inline-block mb-6">
+              <img src="/images/logo.png" alt="Disamina" width="130px" />
             </Link>
             <p className="text-gray-600 mb-6 text-sm">
               AI-powered hiring assistant that helps you hire faster, smarter, and better.
             </p>
             <div className="mb-6">
-              <img src={msLogo} alt="Disamina" className="h-[140px]" />
+              <img src="/images/ms-partner.png" alt="Disamina" className="h-[140px]" />
             </div>
             <div className="flex space-x-4 align-center">
               <a target="_blank" rel="noopener noreferrer"
@@ -136,7 +133,7 @@ const Footer = () => {
                 {group.links.map((link) => (
                   <li key={link.name}>
                     <Link
-                      to={link.href}
+                      href={link.href}
                       className="text-gray-600 hover:text-primary transition-colors text-sm"
                     >
                       {link.name}

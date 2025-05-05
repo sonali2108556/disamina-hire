@@ -1,8 +1,5 @@
 
 import { ArrowDown } from "lucide-react";
-import jobPost from "@/assets/images/Jobs-Post.png";
-import screening from "@/assets/images/AI Screening.webp";
-import funnel from "@/assets/images/Funnel_NoBG_Disamina.png";
 
 const HowItWorks = () => {
   const steps = [
@@ -12,7 +9,7 @@ const HowItWorks = () => {
       title: "Post a Job / Add your JD",
       description:
         "Create a job posting or upload your existing job description. Our AI will analyze and optimize it for better candidate matching.",
-      image: jobPost,
+      image: "images/Jobs-Post.png",
       icon: "📋"
     },
     {
@@ -21,7 +18,7 @@ const HowItWorks = () => {
       title: "Disamina AI screens and assesses candidates",
       description:
         "Our AI technology automatically screens resumes, ranks candidates based on fit, and administers custom assessments.",
-      image: screening,
+      image: "images/AI Screening.webp",
       icon: "🤖"
     },
     {
@@ -30,7 +27,7 @@ const HowItWorks = () => {
       title: "You hire top talent, fast",
       description:
         "Review AI-vetted candidates, conduct final interviews, and make data-driven hiring decisions in record time.",
-      image: funnel,
+      image: "images/Funnel_NoBG_Disamina.png",
       icon: "🚀"
     }
   ];
@@ -61,8 +58,8 @@ const HowItWorks = () => {
                 <div className="lg:w-5/12">
                   <div
                     className={`text-sm font-semibold inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full ${index === 0 ? "bg-blue-50 text-primary" :
-                        index === 1 ? "bg-purple-50 text-purple-600" :
-                          "bg-green-50 text-green-600"
+                      index === 1 ? "bg-purple-50 text-purple-600" :
+                        "bg-green-50 text-green-600"
                       }`}
                   >
                     <span>Step {step.number}</span>
@@ -87,8 +84,8 @@ const HowItWorks = () => {
                 <div className="lg:w-2/12 relative hidden lg:block">
                   <div
                     className={`absolute left-1/2 -translate-x-1/2 w-16 h-16 rounded-full flex items-center justify-center z-10 ${index === 0 ? "bg-blue-100 text-primary" :
-                        index === 1 ? "bg-purple-100 text-purple-600" :
-                          "bg-green-100 text-green-600"
+                      index === 1 ? "bg-purple-100 text-purple-600" :
+                        "bg-green-100 text-green-600"
                       }`}
                   >
                     <span className="text-2xl">{step.icon}</span>
@@ -101,7 +98,7 @@ const HowItWorks = () => {
                     }`}>
                     {/* Placeholder for step illustration */}
                     <div className="text-center">
-                      <img src={step.image} alt={step.alt} className="h-60" />
+                      <img src={step.image} alt={step.alt}  className="h-60" />
                     </div>
                   </div>
                 </div>
