@@ -1,16 +1,12 @@
-import { Button } from "@/components/ui/button";
-import SeoHead from "@/components/shared/SeoHead";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import SeoHead from "@/app/components/shared/SeoHead";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
 import Link from "next/link";
 
 const AIResumeScreening = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-white">
-    <SeoHead
-      title="AI Resume Screening Software | Disamina AI"
-      description="Automatically screen and rank candidates with Disamina AI’s smart resume screening tool—faster and bias-free."
-      keywords="AI resume screening, automated candidate shortlisting, resume parser"
-    />
+   
     <Navbar />
     <div className="container mx-auto py-12 md:py-20 animate-fade-in mt-10">
       <div className="grid md:grid-cols-2 gap-10 items-center mb-14">

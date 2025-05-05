@@ -1,15 +1,11 @@
-import Footer from "@/components/layout/Footer";
-import Navbar from "@/components/layout/Navbar";
-import SeoHead from "@/components/shared/SeoHead";
+import Footer from "@/app/components/layout/Footer";
+import Navbar from "@/app/components/layout/Navbar";
+import SeoHead from "@/app/components/shared/SeoHead";
 
 const TermsOfUse = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <SeoHead
-        title="Terms of Use | Disamina AI"
-        description="Read Disamina’s terms of use to understand how we collect, use, and protect your personal data. We are committed to safeguarding your privacy while delivering AI-driven assessment and proctoring solutions."
-        keywords="Disamina terms of use, Data Protection, User Privacy, AI Assessment Privacy, Online Proctoring Security, Data Usage Policy, Personal Information, Disamina AI, Privacy Commitment, User Data Security"
-      />
+      
       <Navbar />
       <main className="flex-grow">
         <section className="py-16 md:py-24">

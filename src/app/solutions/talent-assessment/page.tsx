@@ -1,18 +1,14 @@
 
 import { ArrowLeft, ClipboardCheck } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import SeoHead from "@/components/shared/SeoHead";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import SeoHead from "@/app/components/shared/SeoHead";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
 import Link from "next/link";
 
 const TalentAssessment = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-green-50 to-white">
-    <SeoHead
-      title="Comprehensive Talent Assessment Platform | Disamina AI"
-      description="Empower your team to assess skills and potential with AI-powered, customizable, role-based assessments covering technical and soft skills."
-      keywords="talent assessment, skills evaluation, candidate testing, pre-employment testing, skill verification, hiring assessment"
-    />
+   
     <Navbar />
     <div className="w-full bg-white shadow">
       <div className="container mx-auto py-4 px-4 md:px-6 flex items-center">

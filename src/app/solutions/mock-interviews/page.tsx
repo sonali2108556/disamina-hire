@@ -1,18 +1,14 @@
 
 import { ArrowLeft, Mic } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import SeoHead from "@/components/shared/SeoHead";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import SeoHead from "@/app/components/shared/SeoHead";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
 
 const MockInterviews = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-teal-50 to-white">
-    <SeoHead
-      title="AI-Powered Mock Interviews | Disamina AI"
-      description="Prepare candidates with realistic, AI-powered practice interviews that simulate real hiring scenarios and deliver detailed feedback."
-      keywords="mock interviews, interview practice, AI interviewer, practice questions, interview preparation, interview simulation"
-    />
+   
     <Navbar />
     <div className="w-full bg-white shadow">
       <div className="container mx-auto py-4 px-4 md:px-6 flex items-center">

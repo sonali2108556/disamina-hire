@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import { Search, Filter, Code, Activity, MessageSquare, CheckSquare, Brain } from "lucide-react";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import SeoHead from "@/components/shared/SeoHead";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import { Input } from "@/app/components/ui/input";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/app/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/app/components/ui/tabs";
+import SeoHead from "@/app/components/shared/SeoHead";
 import Link from "next/link";
 
 const assessmentTypes = [
@@ -115,11 +115,7 @@ const Assessments = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <SeoHead
-        title="Skill Assessments for Hiring | Disamina AI"
-        description="Assess candidates with job-specific skill tests designed by experts and powered by AI to ensure accurate evaluation."
-        keywords="role-based assessments, skill testing, job-specific evaluations"
-      />
+      
       <Navbar />
       <main className="flex-grow">
         <section className="bg-gradient-primary text-white py-20 md:py-28">
@@ -381,9 +377,13 @@ const Assessments = () => {
                 </Button>
               </a>
               <Button onClick={() => {
-                window.Calendly.initPopupWidget({
-                  url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                });
+                if (window.Calendly) {
+                  window.Calendly.initPopupWidget({
+                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                  });
+                } else {
+                  console.error('Calendly script not loaded.');
+                }
                 return false;
               }} size="lg" variant="outline" className="border-white text-primary hover:text-white hover:bg-white/10 text-lg py-6 px-8">
                 Schedule Demo
@@ -393,7 +393,7 @@ const Assessments = () => {
         </section>
       </main>
       <Footer />
-      
+
     </div>
   );
 };

@@ -3,11 +3,11 @@
 
 import { useState } from "react";
 import { Check, X } from "lucide-react";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import { Switch } from "@/app/components/ui/switch";
+import { Tabs, TabsList, TabsTrigger } from "@/app/components/ui/tabs";
 import Link from "next/link";
 
 const Pricing = () => {
@@ -125,7 +125,7 @@ const Pricing = () => {
     { key: "ai proctoring", label: "AI Proctoring" },
   ];
 
-  const extractValue = (featureLabel, key) => {
+  const extractValue = (featureLabel: any, key: any) => {
     if (!featureLabel.toLowerCase().includes(key)) return null;
 
     const match = featureLabel.match(/(\d+|unlimited)/i);
@@ -384,9 +384,13 @@ const Pricing = () => {
                 </Button>
               </a>
               <Button onClick={() => {
-                window.Calendly.initPopupWidget({
-                  url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                });
+                if (window.Calendly) {
+                  window.Calendly.initPopupWidget({
+                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                  });
+                } else {
+                  console.error('Calendly script not loaded.');
+                }
                 return false;
               }} size="lg" variant="outline" className="border-white text-primary hover:bg-white/10  hover:text-white">
                 Book a Demo
@@ -396,7 +400,7 @@ const Pricing = () => {
         </section>
       </main>
       <Footer />
-      
+
     </div >
   );
 };

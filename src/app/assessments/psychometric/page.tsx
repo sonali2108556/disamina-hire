@@ -1,18 +1,14 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import SeoHead from "@/components/shared/SeoHead";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import SeoHead from "@/app/components/shared/SeoHead";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
 import Link from "next/link";
 
 const PsychometricTests = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-indigo-50 to-white">
-    <SeoHead
-      title="Online Psychometric Tests for Hiring | Disamina AI"
-      description="Measure personality, behavior, and cognitive traits of candidates with AI-driven psychometric tests."
-      keywords="psychometric testing, candidate behavior test, personality assessment"
-    />
+    
     <Navbar />
     <div className="container mx-auto py-12 md:py-20 animate-fade-in">
       <div className="grid md:grid-cols-2 gap-10 items-center mb-14 mt-10">

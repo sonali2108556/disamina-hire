@@ -1,17 +1,13 @@
-import { Button } from "@/components/ui/button";
-import SeoHead from "@/components/shared/SeoHead";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import SeoHead from "@/app/components/shared/SeoHead";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
 import proctoring from "@/assets/images/AI_Proctoring.webp";
 import Link from "next/link";
 
 const AIProctoring = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-white">
-    <SeoHead
-      title="AI Proctoring Software for Online Exams | Disamina AI"
-      description="Ensure secure and fair assessments with Disamina’s AI-powered online proctoring system for remote hiring and exams."
-      keywords="AI proctoring, secure assessments, online exam monitoring"
-    />
+    
     <Navbar />
     <div className="container mx-auto py-12 md:py-20 animate-fade-in mt-10">
       <div className="grid md:grid-cols-2 gap-10 items-center mb-14">

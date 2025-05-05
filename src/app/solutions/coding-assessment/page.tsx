@@ -1,18 +1,14 @@
 
 import { ArrowLeft, FileCode } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import SeoHead from "@/components/shared/SeoHead";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import SeoHead from "@/app/components/shared/SeoHead";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
 import Link from "next/link";
 
 const CodingAssessment = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-yellow-50 to-white">
-    <SeoHead
-      title="Coding Assessment Platform for Developers | Disamina AI"
-      description="Evaluate developer skills with real-time coding assessments tailored to your tech hiring needs."
-      keywords="coding assessments, developer evaluation, tech hiring tests"
-    />
+    
     <Navbar />
     <div className="w-full bg-white shadow">
       <div className="container mx-auto py-4 px-4 md:px-6 flex items-center">

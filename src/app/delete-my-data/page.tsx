@@ -1,16 +1,11 @@
-import Footer from "@/components/layout/Footer";
-import Navbar from "@/components/layout/Navbar";
-import SeoHead from "@/components/shared/SeoHead";
+import Footer from "@/app/components/layout/Footer";
+import Navbar from "@/app/components/layout/Navbar";
+import SeoHead from "@/app/components/shared/SeoHead";
 import Link from "next/link";
 
 const DeleteMyDataPage = () => {
   return (
     <div className="min-h-screen flex flex-col">
-
-      <SeoHead
-        title="Request to Delete Your Data | Disamina AI"
-        description="Learn how to request deletion of your personal data from Disamina AI in accordance with privacy regulations."
-      />
 
       <Navbar />
       <main className="flex-grow">

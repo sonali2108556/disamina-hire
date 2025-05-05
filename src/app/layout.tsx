@@ -1,6 +1,13 @@
 import './globals.css';
 import Script from 'next/script';
 
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'AI Hiring Platform for Employers | Disamina AI',
+  description: 'Discover Disamina AI—an all-in-one hiring solution for employers. Post jobs, screen resumes, conduct assessments, and interview candidates faster with AI."',
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{

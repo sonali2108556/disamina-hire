@@ -1,24 +1,17 @@
 "use client";
 
-import Hero from "@/components/home/Hero";
-import Navbar from "@/components/layout/Navbar";
-import Head from "next/head";
-import FeaturesStrip from "@/components/home/FeaturesStrip";
-import HowItWorks from "@/components/home/HowItWorks";
-import Testimonials from "@/components/home/Testimonials";
+import Hero from "@/app/components/home/Hero";
+import Navbar from "@/app/components/layout/Navbar";
+import FeaturesStrip from "@/app/components/home/FeaturesStrip";
+import HowItWorks from "@/app/components/home/HowItWorks";
+import Testimonials from "@/app/components/home/Testimonials";
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import Footer from "@/components/layout/Footer";
-import SeoHead from "@/components/shared/SeoHead";
+import { Button } from "@/app/components/ui/button";
+import Footer from "@/app/components/layout/Footer";
 
 export default function Home() {
   return (
     <>
-      <SeoHead
-        title="Best AI Hiring Platform for Employers | Disamina AI"
-        description="Discover Disamina AI—an all-in-one hiring solution for employers to post jobs, screen resumes, conduct assessments, and interview candidates faster using AI."
-        keywords="AI hiring platform, hire with AI, recruitment automation"
-      />
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">
@@ -57,12 +50,18 @@ export default function Home() {
                 Join thousands of companies that are hiring faster and smarter with Disamina AI.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button onClick={() => {
-                  window.Calendly.initPopupWidget({
-                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                  });
-                  return false;
-                }} size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg">
+                <Button
+                  onClick={() => {
+                    if (window.Calendly) {
+                      window.Calendly.initPopupWidget({
+                        url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                      });
+                    } else {
+                      console.error('Calendly script not loaded.');
+                    }
+                    return false;
+                  }}
+                  size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg">
                   Book a Demo
                 </Button>
                 <a href="https://portal.disamina.ai/signin" target="_blank" rel="noreferrer noopener">

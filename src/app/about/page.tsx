@@ -1,14 +1,13 @@
 "use client";
 
 import { Rocket, BookOpen, Users, Medal, Calendar, Cog } from "lucide-react";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import { Button } from "@/components/ui/button";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
 
 const About = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
@@ -262,9 +261,13 @@ const About = () => {
 
             <Button
               onClick={() => {
-                window.Calendly.initPopupWidget({
-                  url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                });
+                if (window.Calendly) {
+                  window.Calendly.initPopupWidget({
+                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                  });
+                } else {
+                  console.error('Calendly script not loaded.');
+                }
                 return false;
               }}
               size="lg"
@@ -278,7 +281,7 @@ const About = () => {
         </section>
       </main>
       <Footer />
-      
+
     </div>
   );
 };

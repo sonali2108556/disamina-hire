@@ -2,13 +2,13 @@
 
 import { useState } from "react";
 import { Mail, Phone, MapPin, MessageCircle, Send, ArrowRight } from "lucide-react";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent } from "@/components/ui/card";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import { Input } from "@/app/components/ui/input";
+import { Card, CardContent } from "@/app/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
-import SeoHead from "@/components/shared/SeoHead";
+import SeoHead from "@/app/components/shared/SeoHead";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -79,11 +79,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <SeoHead
-        title="Contact Disamina AI | Get in Touch"
-        description="Reach out to Disamina AI for support, partnership inquiries, or product demos. We’re here to help you hire better."
-        keywords="contact Disamina, hiring support, AI recruitment demo"
-      />
+     
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
@@ -363,19 +359,25 @@ const Contact = () => {
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               Transform your hiring process with Disamina AI's AI-powered solutions.
             </p>
-            <Button onClick={() => {
-              window.Calendly.initPopupWidget({
-                url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-              });
-              return false;
-            }} size="lg" className="bg-white text-primary hover:bg-gray-100">
+            <Button
+              onClick={() => {
+                if (window.Calendly) {
+                  window.Calendly.initPopupWidget({
+                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                  });
+                } else {
+                  console.error('Calendly script not loaded.');
+                }
+                return false;
+              }}
+              size="lg" className="bg-white text-primary hover:bg-gray-100">
               Book a Demo Today
             </Button>
           </div>
         </section>
       </main>
       <Footer />
-      
+
     </div>
   );
 };

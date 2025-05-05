@@ -1,18 +1,14 @@
 
 import { ArrowLeft, Briefcase } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import SeoHead from "@/components/shared/SeoHead";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import SeoHead from "@/app/components/shared/SeoHead";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
 import Link from "next/link";
 
 const PersonalizedCareerPage = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-purple-50 to-white">
-    <SeoHead
-      title="Custom Career Pages for Employers | Disamina AI"
-      description="Build a personalized career page with Disamina AI to showcase your brand and attract top talent effortlessly."
-      keywords="custom career page, branded job portal, employer branding"
-    />
+    
     <Navbar />
     <div className="w-full bg-white shadow">
       <div className="container mx-auto py-4 px-4 md:px-6 flex items-center">

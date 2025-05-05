@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { ArrowRight, FileText, User, FileCheck, Video } from "lucide-react";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import SeoHead from "@/components/shared/SeoHead";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/app/components/ui/card";
+import SeoHead from "@/app/components/shared/SeoHead";
 import Link from "next/link";
 
 const ForCandidates = () => {

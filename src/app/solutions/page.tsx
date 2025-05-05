@@ -1,11 +1,11 @@
 "use client";
 
 import { ArrowRight, FileSearch, Briefcase, ClipboardCheck, Video, Laptop, FileText, Mic, Users } from "lucide-react";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import SeoHead from "@/components/shared/SeoHead";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/app/components/ui/card";
+import SeoHead from "@/app/components/shared/SeoHead";
 import Link from "next/link";
 
 // Define the solution card data
@@ -96,13 +96,7 @@ const solutions = [
 const Solutions = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <SeoHead
-        title=" AI-Powered Hiring Solutions | Disamina AI"
-        description=" Explore Disamina AI’s suite of smart hiring solutions including resume screening, assessments, proctoring, and automated interviews."
-        keywords=" hiring solutions, AI hiring tools, recruitment automation solutions
-
-"
-      />
+      
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
@@ -114,9 +108,13 @@ const Solutions = () => {
                 Our comprehensive suite of AI tools streamlines every step of your hiring process
               </p>
               <Button onClick={() => {
-                window.Calendly.initPopupWidget({
-                  url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                });
+                if (window.Calendly) {
+                  window.Calendly.initPopupWidget({
+                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                  });
+                } else {
+                  console.error('Calendly script not loaded.');
+                }
                 return false;
               }} size="lg" className="bg-gradient-blend  hover:opacity-90 text-white text-[17px] py-6 px-8 transform transition-transform hover:scale-105"
               >
@@ -177,9 +175,13 @@ const Solutions = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button onClick={() => {
-                window.Calendly.initPopupWidget({
-                  url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                });
+                if (window.Calendly) {
+                  window.Calendly.initPopupWidget({
+                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                  });
+                } else {
+                  console.error('Calendly script not loaded.');
+                }
                 return false;
               }} size="lg" className="bg-white text-primary hover:bg-gray-100">
                 Book a Demo
@@ -194,7 +196,7 @@ const Solutions = () => {
         </section>
       </main>
       <Footer />
-      
+
     </div>
   );
 };

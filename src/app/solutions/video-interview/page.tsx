@@ -1,18 +1,13 @@
 
 import { ArrowLeft, Video } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import SeoHead from "@/components/shared/SeoHead";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import { Button } from "@/app/components/ui/button";
+import SeoHead from "@/app/components/shared/SeoHead";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
 import Link from "next/link";
 
 const VideoInterviews = () => (
   <div className="min-h-screen flex flex-col bg-gradient-to-br from-red-50 to-white">
-    <SeoHead
-      title="AI-Powered Video Interviews | Disamina AI"
-      description="Conduct seamless, automated video interviews with Disamina AI—screen candidates faster with structured questions and insights."
-      keywords="AI video interview, one-way interviews, automated candidate screening"
-    />
 
     <Navbar />
     <div className="w-full bg-white shadow">
