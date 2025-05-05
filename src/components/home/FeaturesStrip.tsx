@@ -184,7 +184,7 @@ const FeaturesStrip = () => {
 
               <div className="bg-gray-100 rounded-lg flex items-center justify-center min-h-[300px]">
                 {/* Placeholder for feature illustration/screenshot */}
-                <img src={currentFeature.image} className="h-[340px] w-[100%]" />
+                <img src={currentFeature.image} alt={currentFeature.title} className="h-[340px] w-[100%]" />
                 {/* <div className="text-center p-6">
                   <div className="mx-auto w-16 h-16 mb-4 bg-primary/20 rounded-full flex items-center justify-center">
                     {currentFeature.icon}

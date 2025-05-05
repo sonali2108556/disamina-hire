@@ -13,6 +13,7 @@ const VideoInterviews = () => (
       title="AI-Powered Video Interviews | Disamina AI"
       description="Conduct seamless, automated video interviews with Disamina AI—screen candidates faster with structured questions and insights."
       keywords="AI video interview, one-way interviews, automated candidate screening"
+      canonicalUrl="https://disamina-hire.onrender.com/solutions/video-interview"
     />
 
     <Navbar />

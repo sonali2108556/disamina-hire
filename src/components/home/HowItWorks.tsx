@@ -8,6 +8,7 @@ const HowItWorks = () => {
   const steps = [
     {
       number: "01",
+      alt:"post job",
       title: "Post a Job / Add your JD",
       description:
         "Create a job posting or upload your existing job description. Our AI will analyze and optimize it for better candidate matching.",
@@ -16,6 +17,7 @@ const HowItWorks = () => {
     },
     {
       number: "02",
+      alt: "AI screen",
       title: "Disamina AI screens and assesses candidates",
       description:
         "Our AI technology automatically screens resumes, ranks candidates based on fit, and administers custom assessments.",
@@ -24,6 +26,7 @@ const HowItWorks = () => {
     },
     {
       number: "03",
+      alt: "hire",
       title: "You hire top talent, fast",
       description:
         "Review AI-vetted candidates, conduct final interviews, and make data-driven hiring decisions in record time.",
@@ -98,7 +101,7 @@ const HowItWorks = () => {
                     }`}>
                     {/* Placeholder for step illustration */}
                     <div className="text-center">
-                      <img src={step.image} className="h-60" />
+                      <img src={step.image} alt={step.alt} className="h-60" />
                     </div>
                   </div>
                 </div>
