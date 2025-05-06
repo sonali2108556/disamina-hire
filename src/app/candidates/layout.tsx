@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: 'AI-Powered Career Tools for Job Seekers | Disamina AI',
   description: 'Get resume insights, mock interviews, and career tools powered by AI to improve your job prospects.',
   keywords: "tools for job seekers, resume feedback, career booster",
+  icons: {
+    icon: "/favicon.ico"
+  },
   openGraph: {
     title: 'AI-Powered Career Tools for Job Seekers | Disamina AI',
     description: 'Get resume insights, mock interviews, and career tools powered by AI to improve your job prospects.',
