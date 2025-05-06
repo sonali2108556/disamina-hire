@@ -184,7 +184,7 @@ const ForCandidates = () => {
         </section>
 
         {/* Pricing Strip */}
-        <section className="py-12 md:py-16 bg-gray-50">
+        {/* <section className="py-12 md:py-16 bg-gray-50">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold mb-2">Simple, Transparent Pricing</h2>
@@ -256,7 +256,7 @@ const ForCandidates = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Testimonials */}
         {/* <section className="py-16 md:py-24">

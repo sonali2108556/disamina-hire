@@ -6,7 +6,7 @@ import Link from "next/link";
 const features = [
   {
     id: "career-page",
-    image: "images/Job Posting.jpg",
+    image: "/images/career page.webp",
     href: "/solutions/career-page",
     title: "Career Page",
     icon: <CircleUser className="h-6 w-6" />,
@@ -21,7 +21,7 @@ const features = [
   },
   {
     id: "ai-screening",
-    image: "images/AI Screening.webp",
+    image: "/images/AI Screening_home.webp",
     href: "/solutions/ai-screening",
     title: "AI Screening",
     icon: <Brain className="h-6 w-6" />,
@@ -36,7 +36,7 @@ const features = [
   },
   {
     id: "talent-assessments",
-    image: "images/AI_Assessment.webp",
+    image: "/images/AI Assessment_home.webp",
     href: "/solutions/talent-assessment",
     title: "Talent Assessments",
     icon: <BookCheck className="h-6 w-6" />,
@@ -51,7 +51,7 @@ const features = [
   },
   {
     id: "ai-proctoring",
-    image: "images/AI_Proctoring.webp",
+    image: "/images/AI Proctoring_home.webp",
     href: "/solutions/ai-proctoring",
     title: "AI Proctoring",
     icon: <Check className="h-6 w-6" />,
