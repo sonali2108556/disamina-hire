@@ -78,38 +78,7 @@ const ForCandidates = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="card-hover">
-                <CardHeader>
-                  <FileText className="h-10 w-10 text-primary mb-2" />
-                  <CardTitle>Resume Optimizer</CardTitle>
-                  <CardDescription>Get your resume automatically optimized for ATS systems</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p>Our AI analyzes your resume against job descriptions to ensure maximum matching score with ATS systems and hiring managers.</p>
-                </CardContent>
-                <CardFooter>
-                  <Link href="https://portal.disamina.ai/candidate/login" target="_blank" rel="noreferrer noopener">
-                    <Button variant="outline" className="w-full">Try Now</Button>
-                  </Link>
-                </CardFooter>
-              </Card>
-
-              <Card className="card-hover">
-                <CardHeader>
-                  <FileCheck className="h-10 w-10 text-primary mb-2" />
-                  <CardTitle>Resume Generator</CardTitle>
-                  <CardDescription>Create an impressive resume in minutes</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p>Let our AI build a professional resume from scratch. Just input your experience and skills, and we'll format everything perfectly.</p>
-                </CardContent>
-                <CardFooter>
-                  <Link href="https://portal.disamina.ai/candidate/login" target="_blank" rel="noreferrer noopener">
-                    <Button variant="outline" className="w-full">Generate Resume</Button>
-                  </Link>
-                </CardFooter>
-              </Card>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
 
               <Card className="card-hover">
                 <CardHeader>
@@ -120,18 +89,44 @@ const ForCandidates = () => {
                 <CardContent>
                   <p>Paste any job description and our AI will analyze the key requirements, showing you exactly what skills to emphasize in your application.</p>
                 </CardContent>
-                <CardFooter>
-                  <Link href="https://portal.disamina.ai/candidate/login" target="_blank" rel="noreferrer noopener">
-                    <Button variant="outline" className="w-full">Analyze a JD</Button>
-                  </Link>
-                </CardFooter>
+
               </Card>
+              <Card className="card-hover">
+                <CardHeader>
+                  <FileText className="h-10 w-10 text-primary mb-2" />
+                  <CardTitle>Resume Optimizer</CardTitle>
+                  <CardDescription>Get your resume automatically optimized for ATS systems</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p>Our AI analyzes your resume against job descriptions to ensure maximum matching score with ATS systems and hiring managers.</p>
+                </CardContent>
+
+              </Card>
+              <Card className="card-hover">
+                <CardHeader>
+                  <FileCheck className="h-10 w-10 text-primary mb-2" />
+                  <CardTitle>Resume Generator</CardTitle>
+                  <CardDescription>Create an impressive resume in minutes</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p>Let our AI build a professional resume from scratch. Just input your experience and skills, and we'll format everything perfectly.</p>
+                </CardContent>
+
+              </Card>
+            </div>
+            <div className="container mx-auto flex justify-center">
+              <Link href="/solutions/ai-resume-optimizer" >
+                <Button className="bg-pink-600 hover:bg-pink-700 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105">
+                  Optimize My Resume
+                  <ArrowRight className="w-5 h-5" />
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
 
         {/* Mock Interviews & Assessments */}
-        <section className="py-16 md:py-24">
+        {/* <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row gap-12 items-center">
               <div className="md:w-1/2">
@@ -181,7 +176,7 @@ const ForCandidates = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Pricing Strip */}
         {/* <section className="py-12 md:py-16 bg-gray-50">
@@ -327,7 +322,7 @@ const ForCandidates = () => {
         </section>
       </main>
       <Footer />
-      
+
     </div>
   );
 };

@@ -56,15 +56,8 @@ const Navbar = () => {
         { name: "Pricing", href: "/pricing" },
       ],
     },
-    {
-      name: "For Candidates",
-      type: "dropdown",
-      items: [
-        { name: "AI Resume Scorer", href: "/candidates" },
-        { name: "AI Resume Builder", href: "/candidates" },
-        { name: "Browse Jobs & Apply", href: "https://jobs.disamina.ai" },
-      ],
-    },
+    // { name: "AI Resume Scorer", href: "/candidates" },
+    { name: "For Candidates", href: "/candidates", type:"item" },
     { name: "Resources", href: "https://disamina.substack.com/", type: "item" },
   ];
 
@@ -170,7 +163,7 @@ const Navbar = () => {
                     href={link.href}
                     className="text-gray-700 hover:text-primary py-2 font-medium"
                     onClick={() => setIsOpen(false)}
-                    >
+                  >
                     {link.name}
                   </Link>
                 ) : (

@@ -31,6 +31,20 @@ const Pricing = () => {
   // Plan features
   const plans = [
     {
+      name: "Base",
+      description: "Base Subscription",
+      // monthlyPrice: 40,
+      features: [
+        
+      ],
+      notIncluded: [
+       
+      ],
+      cta: "Claims free credits",
+      ctaLink: "https://portal.disamina.ai/",
+      popular: false
+    },
+    {
       name: "Standard",
       description: "Base Subscription",
       monthlyPrice: 40,
@@ -184,7 +198,7 @@ const Pricing = () => {
         {/* Pricing Cards */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {plans.map((plan, idx) => (
                 <div
                   key={idx}

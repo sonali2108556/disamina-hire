@@ -8,7 +8,7 @@ const HowItWorks = () => {
       title: "Post a Job / Add your JD",
       description:
         "Create a job posting or upload your existing job description. Our AI will analyze and optimize it for better candidate matching.",
-      image: "/images/Post a Job_home.webp",
+      image: "/images/JD-Generate.png",
       icon: "📋"
     },
     {
@@ -16,7 +16,7 @@ const HowItWorks = () => {
       title: "Disamina AI screens and assesses candidates",
       description:
         "Our AI technology automatically screens resumes, ranks candidates based on fit, and administers custom assessments.",
-      image: "/images/AI Screening_home.webp",
+      image: "/images/aiScreening.svg",
       icon: "🤖"
     },
     {

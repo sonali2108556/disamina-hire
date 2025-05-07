@@ -64,24 +64,24 @@ const solutions = [
     color: "bg-indigo-50 text-indigo-600",
     benefits: ["Optimize for inclusivity", "Improve application quality", "Save HR time"]
   },
-  {
-    id: "ai-resume-optimizer",
-    path: "/solutions/ai-resume-optimizer",
-    title: "AI Resume Optimizer",
-    description: "Help candidates improve their resumes to better match your requirements",
-    icon: FileText,
-    color: "bg-pink-50 text-pink-600",
-    benefits: ["Higher quality applications", "Better candidate experience", "Reduced screening time"]
-  },
-  {
-    id: "mock-interviews",
-    path: "/solutions/mock-interviews",
-    title: "Mock Interviews",
-    description: "AI-powered practice interviews for candidates to prepare better",
-    icon: Mic,
-    color: "bg-teal-50 text-teal-600",
-    benefits: ["Better prepared candidates", "Reduced interview anxiety", "Improved hiring outcomes"]
-  },
+  // {
+  //   id: "ai-resume-optimizer",
+  //   path: "/solutions/ai-resume-optimizer",
+  //   title: "AI Resume Optimizer",
+  //   description: "Help candidates improve their resumes to better match your requirements",
+  //   icon: FileText,
+  //   color: "bg-pink-50 text-pink-600",
+  //   benefits: ["Higher quality applications", "Better candidate experience", "Reduced screening time"]
+  // },
+  // {
+  //   id: "mock-interviews",
+  //   path: "/solutions/mock-interviews",
+  //   title: "Mock Interviews",
+  //   description: "AI-powered practice interviews for candidates to prepare better",
+  //   icon: Mic,
+  //   color: "bg-teal-50 text-teal-600",
+  //   benefits: ["Better prepared candidates", "Reduced interview anxiety", "Improved hiring outcomes"]
+  // },
   {
     id: "campus-hiring",
     path: "/solutions/campus-hiring",
