@@ -33,7 +33,7 @@ const Pricing = () => {
     {
       name: "Base",
       description: "Base Subscription",
-      // monthlyPrice: 40,
+       monthlyPrice: 40,
       features: [
         
       ],
