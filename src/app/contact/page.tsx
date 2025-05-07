@@ -79,7 +79,7 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-     
+
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
@@ -131,7 +131,11 @@ const Contact = () => {
                   </div>
                   <h3 className="text-xl font-bold mb-2">Live Chat</h3>
                   <p className="text-gray-600 mb-4">Get immediate assistance</p>
-                  <Button className="bg-primary hover:bg-primary-dark text-white">
+                  <Button className="bg-primary hover:bg-primary-dark text-white" onClick={() => {
+                    if (window.Tawk_API && window.Tawk_API.maximize) {
+                      window.Tawk_API.maximize();
+                    }
+                  }}>
                     Start Chat <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </CardContent>

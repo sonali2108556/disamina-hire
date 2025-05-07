@@ -1,4 +1,4 @@
-export {};
+export { };
 
 declare global {
   interface Window {
@@ -7,6 +7,11 @@ declare global {
     };
     fwcrm: {
       identify: (identifier: string, data: any) => Promise<void>;
+    };
+    Tawk_API?: {
+      maximize?: () => void;
+      hideWidget?: () => void;
+      onLoad?: () => void;
     };
   }
 }
