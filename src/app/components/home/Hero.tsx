@@ -13,13 +13,13 @@ const Hero = () => {
   }, []);
   return <section className="pt-32 pb-16 md:pt-40 md:pb-20 relative overflow-hidden animate-fade-in">
     {/* Background decorations with animation */}
-    <div className="blur-circle blur-circle-primary w-[500px] h-[500px] -top-64 -left-64 animate-pulse-soft"></div>
-    <div className="blur-circle blur-circle-secondary w-[300px] h-[300px] top-40 right-0 animate-pulse-soft"></div>
+    <div className="blur-circle blur-circle-primary w-[200px] h-[200px] -top-150 -left-64 animate-pulse-soft"></div>
+    <div className="blur-circle blur-circle-secondary w-[150px] h-[150px] top-40 right-0 animate-pulse-soft"></div>
 
     <div className="container mx-auto px-4 md:px-6 relative z-10">
       <div className="max-w-[800px] mx-auto text-center">
         <div className="inline-block bg-gradient-to-r from-primary/10 to-secondary/10 px-4 py-2 rounded-full mb-4 animate-fade-in">
-          <span className="text-primary font-medium">AI-Powered Talent Acquisition Platform</span>
+          <span className="text-primary font-medium">AI-Enabled HR Assistant</span>
         </div>
 
         <h1 className="text-[39px] md:text-[47px] lg:text-[55px] font-bold mb-6 leading-tight animate-slide-in">
@@ -31,13 +31,13 @@ const Hero = () => {
         </h1>
 
         <p className="text-[17px] md:text-[19px] text-gray-600 mb-8 max-w-[600px] mx-auto animate-fade-in">
-          Revolutionize your hiring process with AI-driven candidate screening, intelligent assessments, and automated interviews - reducing time-to-hire by 80%.
+          Revolutionize your hiring process with AI-driven candidate screening, assessments, and interviews - reducing time-to-hire by 80%.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-          <a href="https://jobs.disamina.ai/" target="_blank" rel="noreferrer noopener">
+          <a href="https://portal.disamina.ai/" target="_blank" rel="noreferrer noopener">
             <Button className="bg-gradient-blend hover:opacity-90 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105">
-              Explore Open Opportunities
+              Start Hiring Now
               <ArrowRight className="w-5 h-5" />
             </Button>
           </a>

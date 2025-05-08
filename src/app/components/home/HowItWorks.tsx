@@ -5,9 +5,9 @@ const HowItWorks = () => {
   const steps = [
     {
       number: "01",
-      title: "Post a Job / Add your JD",
+      title: "Post a Job",
       description:
-        "Create a job posting or upload your existing job description. Our AI will analyze and optimize it for better candidate matching.",
+        "Create a job posting with all details or let our AI generate optimized job description for you.",
       image: "/images/JD-Generate.png",
       icon: "📋"
     },
@@ -35,7 +35,7 @@ const HowItWorks = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Our AI-powered platform simplifies your hiring process in just three easy steps,
+            Our AI-enabled HR assistant simplifies your hiring process in just three easy steps,
             saving you time and helping you find better candidates.
           </p>
         </div>

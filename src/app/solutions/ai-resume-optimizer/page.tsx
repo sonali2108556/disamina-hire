@@ -19,20 +19,20 @@ const AIResumeOptimizer = () => (
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
             <div className="inline-block bg-gradient-to-r from-pink-100 to-pink-200 px-4 py-2 rounded-full mb-4">
-              <span className="text-pink-700 font-medium">For Candidates & Recruiters</span>
+              <span className="text-pink-700 font-medium">For Active Job Seekers</span>
             </div>
 
             <h1 className="text-[39px] md:text-[47px] font-bold mb-6 leading-tight">
-              Transform Resumes With <span className="text-pink-600">AI-Powered</span> Optimization
+              Optimize Resume With <span style={{ color: '#ff7055' }}>AI-Powered</span> Solution
             </h1>
 
             <p className="text-[17px] md:text-[19px] text-gray-600 mb-8">
-              Help candidates craft the perfect resume using AI-generated insights that boost the match between their application and your job requirements.
+              Craft the perfect resume using AI-generated insights to boost the match between your application and job requirements.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="https://portal.disamina.ai/candidate/login" rel="noreferrer noopener" target="_blank">
-                <Button className="bg-pink-600 hover:bg-pink-700 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105">
+                <Button style={{ backgroundColor: '#1C1464' }} className="bg-pink-600 hover:bg-pink-700 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105">
                   Optimize My Resume
                   <ArrowRight className="w-5 h-5" />
                 </Button>
@@ -111,7 +111,7 @@ const AIResumeOptimizer = () => (
         <div className="mt-12 text-center">
           <Link href="https://portal.disamina.ai/candidate/login" rel="noreferrer noopener" target="_blank">
 
-            <Button className="bg-pink-600 hover:bg-pink-700 text-white">
+            <Button style={{ backgroundColor: '#1C1464' }} className="bg-pink-600 hover:bg-pink-700 text-white">
               Start Optimization Now
             </Button>
           </Link>
@@ -175,7 +175,7 @@ const AIResumeOptimizer = () => (
     </section>
 
     {/* CTA Section */}
-    <section className="py-16 md:py-20 bg-gradient-to-r from-pink-500 to-pink-600 text-white">
+    <section  style={{ backgroundColor: '#1C1464' }} className="py-16 md:py-20 text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Land Your Dream Job?</h2>
@@ -185,7 +185,7 @@ const AIResumeOptimizer = () => (
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="https://portal.disamina.ai/candidate/login" rel="noreferrer noopener" target="_blank">
-              <Button size="lg" className="bg-white text-pink-600 hover:bg-gray-100">
+              <Button style={{ color: '#1C1464' }} size="lg" className="bg-white text-pink-600 hover:bg-gray-100">
                 <Download className="mr-2 h-5 w-5" />
                 Try For Free
               </Button>

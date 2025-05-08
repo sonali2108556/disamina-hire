@@ -11,10 +11,9 @@ const features = [
     title: "Career Page",
     icon: <CircleUser className="h-6 w-6" />,
     description:
-      "Create a branded, AI-powered career page that engages candidates and simplifies applications.",
+      "Create your personalized career page that engages candidates and simplifies applications.",
     bullets: [
       "Custom branding and design",
-      "AI chatbot for candidate queries",
       "Seamless application process",
       "Mobile-optimized experience"
     ]
@@ -26,12 +25,12 @@ const features = [
     title: "AI Screening",
     icon: <Brain className="h-6 w-6" />,
     description:
-      "Let AI analyze resumes, rank candidates, and find the perfect match for your job descriptions.",
+      "Let AI analyze resumes, rank candidates, and find the perfect match for your open positions.",
     bullets: [
       "Automated resume parsing",
-      "Skill-based matching algorithms",
+      "AI-enabled matching algorithms",
+      "AI-generated profile summary",
       "Bias reduction technology",
-      "Customizable screening criteria"
     ]
   },
   {
@@ -45,8 +44,8 @@ const features = [
     bullets: [
       "Technical skill assessments",
       "Cognitive ability tests",
-      "Behavioral evaluations",
-      "Personality profiling"
+      "Behavioral assessments",
+      "Personality tests"
     ]
   },
   {
@@ -58,7 +57,7 @@ const features = [
     description:
       "Ensure assessment integrity with advanced AI monitoring and anti-cheating technology.",
     bullets: [
-      "Real-time monitoring",
+      "Real-time AI monitoring",
       "Browser lockdown features",
       "Identity verification",
       "Anomaly detection"
@@ -118,10 +117,10 @@ const FeaturesStrip = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Complete AI Recruitment Platform
+            Complete AI Hiring Platform
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Our intelligent platform covers every step of your hiring process,
+            Our smart platform covers every step of your hiring process,
             from attracting candidates to making the final selection.
           </p>
         </div>

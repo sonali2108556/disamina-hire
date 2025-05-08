@@ -11,22 +11,31 @@ import Link from "next/link";
 // Define the solution card data
 const solutions = [
   {
-    id: "ai-screening",
-    path: "/solutions/ai-screening",
-    title: "AI Resume Screening",
-    description: "Automatically screen and rank candidates based on job requirements",
-    icon: FileSearch,
-    color: "bg-blue-50 text-blue-600",
-    benefits: ["Reduce screening time by 85%", "Eliminate unconscious bias", "Rank candidates objectively"]
-  },
-  {
     id: "career-page",
     path: "/solutions/career-page",
-    title: "AI-Powered Career Page",
-    description: "Convert more visitors into applicants with personalized job recommendations",
+    title: "Career Page",
+    description: "Convert more visitors into applicants with personalized career page",
     icon: Briefcase,
     color: "bg-purple-50 text-purple-600",
     benefits: ["Increase application rates", "Personalized job matching", "Seamless candidate experience"]
+  },
+  {
+    id: "ai-jd-generator",
+    path: "/solutions/ai-jd-generator",
+    title: "AI JD Generator",
+    description: "Create compelling job descriptions that attract the right candidates",
+    icon: FileText,
+    color: "bg-indigo-50 text-indigo-600",
+    benefits: ["Optimize for inclusivity", "Improve application quality", "Save HR time"]
+  },
+  {
+    id: "ai-screening",
+    path: "/solutions/ai-screening",
+    title: "AI Resume Screening",
+    description: "Automatically screen and rank candidates, generate summary based on job requirements",
+    icon: FileSearch,
+    color: "bg-blue-50 text-blue-600",
+    benefits: ["Reduce screening time by 85%", "Eliminate unconscious bias", "Rank candidates objectively"]
   },
   {
     id: "talent-assessment",
@@ -54,15 +63,6 @@ const solutions = [
     icon: Laptop,
     color: "bg-yellow-50 text-yellow-600",
     benefits: ["Real-world coding challenges", "Plagiarism detection", "Automated evaluation"]
-  },
-  {
-    id: "ai-jd-generator",
-    path: "/solutions/ai-jd-generator",
-    title: "AI JD Generator",
-    description: "Create compelling job descriptions that attract the right candidates",
-    icon: FileText,
-    color: "bg-indigo-50 text-indigo-600",
-    benefits: ["Optimize for inclusivity", "Improve application quality", "Save HR time"]
   },
   // {
   //   id: "ai-resume-optimizer",
@@ -103,9 +103,9 @@ const Solutions = () => {
         <section className="bg-gradient-primary text-white py-20 md:py-28">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-3xl md:text-5xl font-bold mb-6">AI-Powered Recruitment Solutions</h1>
+              <h1 className="text-3xl md:text-5xl font-bold mb-6">AI Hiring Solutions</h1>
               <p className="text-xl mb-8">
-                Our comprehensive suite of AI tools streamlines every step of your hiring process
+                Our comprehensive suite of AI tools streamlines every step of your hiring process.
               </p>
               <Button onClick={() => {
                 if (window.Calendly) {
@@ -118,7 +118,7 @@ const Solutions = () => {
                 return false;
               }} size="lg" className="bg-gradient-blend  hover:opacity-90 text-white text-[17px] py-6 px-8 transform transition-transform hover:scale-105"
               >
-                Book a Demo
+                Schedule a Call
               </Button>
             </div>
           </div>
@@ -128,9 +128,9 @@ const Solutions = () => {
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Solutions</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">AI Hiring Solutions To Handle Heavy Lifting</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Comprehensive AI tools for every stage of your recruitment process
+              Let AI handle tasks from screening to scheduling – empower your team for decision-making.
               </p>
             </div>
 

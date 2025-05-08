@@ -24,8 +24,8 @@ const Footer = () => {
     {
       title: "For Candidates",
       links: [
-        { name: "AI Resume Scorer", href: "https://portal.disamina.ai/candidate/login" },
-        { name: "AI Resume Builder", href: "https://portal.disamina.ai/candidate/login" },
+        { name: "AI Resume Optimizer", href: "/solutions/ai-resume-optimizer" },
+        { name: "AI Resume Builder", href: "/solutions/ai-resume-optimizer" },
         { name: "Latest Tech & IT Jobs", href: "https://jobs.disamina.ai/" },
         { name: "Latest Sales & Marketing Jobs", href: "https://jobs.disamina.ai/" },
         { name: "Latest Digital Marketing Jobs", href: "https://jobs.disamina.ai/" },
@@ -37,7 +37,7 @@ const Footer = () => {
       title: "Company",
       links: [
         { name: "About Us", href: "/about" },
-        { name: "Careers", href: "/" },
+        { name: "Careers", href: "https://jobs.disamina.ai/disamina-ai-pv34202201o" },
         { name: "Resources", href: "https://disamina.substack.com/" },
         { name: "Contact Us", href: "/contact" },
         { name: "Privacy Policy", href: "/privacy" },
@@ -56,7 +56,7 @@ const Footer = () => {
               <img src="/images/logo.png" alt="Disamina" width="130px" />
             </Link>
             <p className="text-gray-600 mb-6 text-sm">
-              AI-powered hiring assistant that helps you hire faster, smarter, and better.
+              AI-enabled hiring assistant portal that helps you hire faster, smarter, and better.
             </p>
             <div className="mb-6">
               <img src="/images/ms-partner.png" alt="Disamina" className="h-[140px]" />

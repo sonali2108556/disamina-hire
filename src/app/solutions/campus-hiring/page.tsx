@@ -32,7 +32,7 @@ const CampusHiring = () => (
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="https://portal.disamina.ai/signin" rel="noreferrer noopener" target="_blank">
-                <Button className="bg-orange-600 hover:bg-orange-700 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105">
+                <Button style={{ backgroundColor: '#1C1464' }} className="bg-orange-600 hover:bg-orange-700 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105">
                   Plan Your Drive
                   <ArrowRight className="w-5 h-5" />
                 </Button>
@@ -109,7 +109,7 @@ const CampusHiring = () => (
 
         <div className="mt-12 text-center">
           <Link href="https://portal.disamina.ai/signin" rel="noreferrer noopener" target="_blank">
-            <Button className="bg-orange-600 hover:bg-orange-700 text-white">
+            <Button style={{ backgroundColor: '#1C1464' }} className="bg-orange-600 hover:bg-orange-700 text-white">
               Start Campus Planning
             </Button>
           </Link>
@@ -173,7 +173,7 @@ const CampusHiring = () => (
     </section>
 
     {/* CTA Section */}
-    <section className="py-16 md:py-20 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
+    <section style={{ backgroundColor: '#1C1464' }} className="py-16 md:py-20 text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Plan the Ultimate Campus Drive</h2>
@@ -183,7 +183,7 @@ const CampusHiring = () => (
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="https://portal.disamina.ai/signin" rel="noreferrer noopener" target="_blank">
-              <Button size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
+              <Button style={{ color: '#1C1464' }} size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
                 <Download className="mr-2 h-5 w-5" />
                 Get Started Free
               </Button>

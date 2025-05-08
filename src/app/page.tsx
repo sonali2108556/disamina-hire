@@ -44,10 +44,10 @@ export default function Home() {
           <section className="py-20 bg-gradient-blend text-white text-center">
             <div className="container mx-auto px-4 md:px-6">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                Ready to Transform Your Hiring Process?
+                Try AI-Enabled HR Assistant
               </h2>
               <p className="text-xl text-white/80 max-w-3xl mx-auto mb-8">
-                Join thousands of companies that are hiring faster and smarter with Disamina AI.
+                Future-proof your organization, start hiring faster and smarter with Disamina AI.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
                 <Button
@@ -62,7 +62,7 @@ export default function Home() {
                     return false;
                   }}
                   size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg">
-                  Book a Demo
+                  Schedule a Call
                 </Button>
                 <a href="https://portal.disamina.ai/signin" target="_blank" rel="noreferrer noopener">
                   <Button size="lg" className="bg-secondary hover:bg-secondary-dark text-white text-lg">

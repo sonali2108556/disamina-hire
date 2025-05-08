@@ -12,15 +12,15 @@ import Link from "next/link";
 
 const Pricing = () => {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">("monthly");
-  const [currency, setCurrency] = useState<"usd" | "inr">("usd");
+  const [currency, setCurrency] = useState<"inr" | "usd">("inr");
 
   const formatPrice = (price: number) => {
-    if (currency === "usd") {
-      return `$${price}`;
+    if (currency === "inr") {
+      return `₹${price}`;
     } else {
-      // Convert USD to INR (approximate conversion)
-      const inrPrice = Math.round(price * 75);
-      return `₹${inrPrice}`;
+      // Convert INR to USD (approximate conversion)
+      const usdPrice = Math.round(price / 80);
+      return `$${usdPrice}`;
     }
   };
 
@@ -32,72 +32,75 @@ const Pricing = () => {
   const plans = [
     {
       name: "Base",
-      description: "Base Subscription",
-       monthlyPrice: 40,
+      description: "Free hiring essentials to get you started.",
+       monthlyPrice: 0,
       features: [
-        
+        "Unlimited jobs",
+        "AI JD generator",
+        "50 applications",
+        "AI screening",
+        "AI profile summary",
+        "10 assessments",
+        "Activity report",
+        "Detailed report",
+        "2 users"
       ],
       notIncluded: [
        
       ],
-      cta: "Claims free credits",
+      cta: "Try Now",
       ctaLink: "https://portal.disamina.ai/",
       popular: false
     },
     {
       name: "Standard",
-      description: "Base Subscription",
-      monthlyPrice: 40,
+      description: "Enhanced hiring tools for growing teams.",
+      monthlyPrice: 12999,
       features: [
-        "10 Credits (No expiry)",
-        "Discount on bulk credit purchase",
-        "Image capture before assessment",
-        "Access to marketplace assessments",
-        "Detailed assessment report",
+        "Unlimited jobs",
+        "AI JD generator",
+        "500 applications",
+        "AI screening",
+        "AI profile summary",
+        "200 assessments",
+        "Premium assessment library",
         "Activity report",
-        "Custom forms : 5",
-        "Operators : 5",
-        "Basic support",
+        "Detailed report",
+        "50 video interview",
+        "5 users"
       ],
       notIncluded: [
-        "Identity card verification",
-        "Image capture before assessment",
-        "Basic branding",
-        "Advanced support"
+       
       ],
-      cta: "Claims free credits",
+      cta: "Try Now",
       ctaLink: "https://portal.disamina.ai/",
       popular: false
     },
     {
       name: "Advanced",
-      description: "Advanced Subscription",
-      monthlyPrice: 45,
+      description: "Comprehensive AI hiring solutions for scaling businesses.",
+      monthlyPrice: 48999,
       features: [
-        "10 Credits (No expiry)",
-        "Discount on bulk credit purchase",
+        "Unlimited jobs",
+        "AI JD generator",
+        "2000 applications",
+        "AI screening",
+        "AI profile summary",
+        "500 assessments",
+        "Premium assessment library",
+        "Activity report",
+        "Detailed report",
+        "AI proctoring",
         "Image capture before assessment",
         "Image capture during assessment",
-        "Identity card verification",
-        "Access to marketplace assessments",
-        "Detailed assessment report",
-        "Activity report",
-        "Custom forms : 10",
-        "Operators : 10",
-        "Basic branding",
-        "Advanced support",
-
+        "ID verification",
+        "100 video interview",
+        "10 users"
       ],
       notIncluded: [
-        "Customised solution",
-        "Unlimited assessments",
-        "Unlimited operators",
-        "Unlimited forms",
-        "AI proctoring",
-        "Branding",
-        "Advanced support"
+        
       ],
-      cta: "Claims free credits",
+      cta: "Try Now",
       ctaLink: "https://portal.disamina.ai/",
       popular: true
     },
@@ -105,14 +108,24 @@ const Pricing = () => {
       name: "Enterprise",
       description: "Tailored to Your Needs",
       monthlyPrice: 0,
-      customQuote: "Custom quote",
+      customQuote: "Custom Quote",
       features: [
         "Customised solution",
+        "Unlimited jobs",
+        "AI JD generator",
+        "Unlimited applications",
+        "AI screening",
+        "AI profile summary",
         "Unlimited assessments",
-        "Unlimited operators",
-        "Unlimited forms",
+        "Premium assessment library",
+        "Activity report",
+        "Detailed report",
         "AI proctoring",
-        "Branding",
+        "Image capture before assessment",
+        "Image capture during assessment",
+        "ID verification",
+        "Unlimited video interview",
+        "Unlimited users",
         "Advanced support"
       ],
       notIncluded: [],
@@ -125,18 +138,21 @@ const Pricing = () => {
     new Set(plans.flatMap((plan) => [...plan.features, ...plan.notIncluded]))
   );
   const groupedFeatures = [
-    { key: "custom forms", label: "Custom Forms" },
-    { key: "operators", label: "Operators" },
-    { key: "support", label: "Support" },
-    { key: "branding", label: "Branding" },
-    { key: "credits", label: "Credits" },
-    { key: "image capture before assessment", label: "Image Before Assessment" },
-    { key: "image capture during assessment", label: "Image During Assessment" },
-    { key: "identity card verification", label: "ID Verification" },
-    { key: "access to marketplace assessments", label: "Marketplace Access" },
+    { key: "jobs", label: "Jobs" },
+    { key: "jd generator", label: "AI JD Generator" },
+    { key: "applications", label: "Applications" },
+    { key: "ai screening", label: "AI Screening" },
+    { key: "profile summary", label: "AI Profile Summary" },
+    { key: "assessments", label: "Assessments" },
+    { key: "premium assessment library", label: "Premium Assessment Library" },
     { key: "activity report", label: "Activity Report" },
-    { key: "detailed assessment report", label: "Detailed Report" },
+    { key: "detailed report", label: "Detailed Report" },
+    { key: "video interview", label: "Video Interview" },
+    { key: "image capture before assessment", label: "Image Capture Before Assessment" },
+    { key: "image capture during assessment", label: "Image Capture During Assessment" },
+    { key: "id verification", label: "ID Verification" },
     { key: "ai proctoring", label: "AI Proctoring" },
+    { key: "users", label: "User Accounts" },
   ];
 
   const extractValue = (featureLabel: any, key: any) => {
@@ -154,14 +170,14 @@ const Pricing = () => {
         <section className="bg-gradient-primary text-white py-20 md:py-28">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-3xl md:text-5xl font-bold mb-6">Transparent Pricing Plans</h1>
+              <h1 className="text-3xl md:text-5xl font-bold mb-6">Flexible Pricing Plans</h1>
               <p className="text-xl mb-8">
                 Choose the right plan for your organization's recruitment needs and budget
               </p>
 
               <div className="flex flex-col sm:flex-row gap-6 items-center justify-center">
                 {/* Currency Toggle */}
-                <Tabs
+                {/* <Tabs
                   defaultValue="usd"
                   value={currency}
                   onValueChange={(value) => setCurrency(value as "usd" | "inr")}
@@ -175,9 +191,9 @@ const Pricing = () => {
                       INR (₹)
                     </TabsTrigger>
                   </TabsList>
-                </Tabs>
+                </Tabs> */}
 
-                {/* Monthly/Annual Toggle */}
+                {/* {/* Monthly/Annual Toggle *
                 <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full p-3">
                   <span className={billingCycle === "monthly" ? "font-medium" : "text-white/70"}>Monthly</span>
                   <Switch
@@ -189,7 +205,7 @@ const Pricing = () => {
                   <span className={billingCycle === "annual" ? "font-medium" : "text-white/70"}>
                     Annual <span className="text-xs rounded-full bg-secondary px-2 py-0.5 ml-1">Save 20%</span>
                   </span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -358,20 +374,20 @@ const Pricing = () => {
                   a: "Yes, you can upgrade or downgrade your plan at any time. When upgrading, the new features will be immediately available, and we'll prorate your billing. When downgrading, the changes will take effect at the start of your next billing cycle."
                 },
                 {
-                  q: "Is there a free trial available?",
-                  a: "Yes, we offer a 14-day free trial for our Starter and Professional plans. No credit card is required to start your trial. The Enterprise plan begins with a personalized demo instead."
+                  q: "Is there a free plan available?",
+                  a: "Yes, we have a base plan which is free to get started. No credit card is required to start."
                 },
                 {
                   q: "How do I know which plan is right for my company?",
-                  a: "It depends on your hiring volume and needs. The Starter plan works well for companies hiring fewer than 10 people per month. The Professional plan is ideal for medium-sized businesses with regular hiring needs. Enterprise is designed for large organizations with complex requirements."
+                  a: "It depends on your hiring volume and needs. The base plan works well for companies hiring fewer than 10 people per month. The Standard and Advanced plans are ideal for medium-sized businesses with regular hiring needs. Enterprise is designed for large organizations with custom requirements."
                 },
                 {
                   q: "Can I customize the features in my plan?",
-                  a: "The Enterprise plan offers full customization options. For Starter and Professional plans, you can add certain individual features at an additional cost. Contact our sales team to discuss your specific needs."
+                  a: "The Enterprise plan offers full customization options. For Standard and Advanced plans, you can add certain individual features at an additional cost. Contact our sales team to discuss your specific needs."
                 },
                 {
                   q: "What payment methods do you accept?",
-                  a: "We accept all major credit cards, PayPal, and bank transfers for annual plans. Enterprise customers can also be invoiced according to their company's procurement processes."
+                  a: "We accept all major payment methods such as UPI, net banking, credit & debit cards, and bank transfers for all plans. Enterprise customers can also be invoiced according to their company's procurement processes."
                 }
               ].map((faq, idx) => (
                 <div key={idx}>
