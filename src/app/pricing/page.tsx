@@ -321,7 +321,7 @@ const Pricing = () => {
                       <td className="py-4 px-6 font-medium text-gray-700">{label}</td>
                       {plans.map((plan) => {
                         const match = plan.features.find((f) => f.toLowerCase().includes(key));
-                        const notIncludedMatch = plan.notIncluded.find((f) =>
+                        const notIncludedMatch = plan.notIncluded.find((f: string) =>
                           f.toLowerCase().includes(key)
                         );
 
