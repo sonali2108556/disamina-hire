@@ -23,7 +23,7 @@ const BehavioralTests = () => (
             </div>
 
             <h1 className="text-[39px] md:text-[47px] font-bold mb-6 leading-tight">
-              Hire for <span className="text-green-600">Attitude</span>, Leadership & Teamwork
+              Hire for <span style={{ color: '#ff7055' }}>Attitude</span>, Leadership & Teamwork
             </h1>
 
             <p className="text-[17px] md:text-[19px] text-gray-600 mb-8">
@@ -33,7 +33,7 @@ const BehavioralTests = () => (
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="https://portal.disamina.ai/signin" rel="noreferrer noopener" target="_blank">
 
-                <Button className="bg-green-600 hover:bg-green-700 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105">
+                <Button style={{ backgroundColor: '#1C1464' }} className="bg-green-600 hover:bg-green-700 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105">
                   Try Behavioral Test
                   <ArrowRight className="w-5 h-5" />
                 </Button>
@@ -111,7 +111,7 @@ const BehavioralTests = () => (
 
         <div className="mt-12 text-center">
           <Link href="https://portal.disamina.ai/signin" rel="noreferrer noopener" target="_blank">
-            <Button className="bg-green-600 hover:bg-green-700 text-white">
+            <Button style={{ backgroundColor: '#1C1464' }} className="bg-green-600 hover:bg-green-700 text-white">
               Create Behavioral Assessment
             </Button>
           </Link>
@@ -175,7 +175,7 @@ const BehavioralTests = () => (
     </section>
 
     {/* CTA Section */}
-    <section className="py-16 md:py-20 bg-gradient-to-r from-green-500 to-green-600 text-white">
+    <section style={{ backgroundColor: '#1C1464' }} className="py-16 md:py-20  text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Build Better, Happier Teams</h2>
@@ -185,7 +185,7 @@ const BehavioralTests = () => (
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="https://portal.disamina.ai/signin" rel="noreferrer noopener" target="_blank">
-              <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
+              <Button style={{ color: '#1C1464' }} size="lg" className="bg-white text-green-600 hover:bg-gray-100">
                 <Download className="mr-2 h-5 w-5" />
                 Start Free Trial
               </Button>
