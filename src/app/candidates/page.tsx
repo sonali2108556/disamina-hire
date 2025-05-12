@@ -53,17 +53,23 @@ const ForCandidates = () => {
                 Let AI optimize your resume, prepare you for interviews, and help you land your dream job faster than ever before.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-                <Link href="https://jobs.disamina.ai" rel="noreferrer noopener" target="_blank">
+              <div className="w-full flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
+                <Link
+                  href="https://jobs.disamina.ai"
+                  rel="noreferrer noopener"
+                  target="_blank"
+                  className="w-full sm:w-auto flex justify-center"
+                >
                   <Button
                     size="lg"
-                    className="bg-gradient-blend hover:opacity-90 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105"
+                    className="w-full sm:w-auto bg-gradient-blend hover:opacity-90 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105"
                   >
                     Explore Open Opportunities
                     <ArrowRight className="w-5 h-5" />
                   </Button>
                 </Link>
               </div>
+
             </div>
           </div>
         </section>

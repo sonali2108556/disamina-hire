@@ -176,8 +176,8 @@ const TalentAssessment = () => (
     </section>
 
     {/* CTA Section */}
-    <section style={{ backgroundColor: '#1C1464' }}  className="py-16 md:py-20  text-white">
-      <div  className="container mx-auto px-4 md:px-6">
+    <section style={{ backgroundColor: '#1C1464' }} className="py-16 md:py-20  text-white">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Start Assessing Talent with Precision</h2>
           <p className="text-xl opacity-90 mb-8">
@@ -191,18 +191,20 @@ const TalentAssessment = () => (
                 Free Trial
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="border-white hover:bg-white bg-white/0" onClick={() => {
-              if (window.Calendly) {
-                window.Calendly.initPopupWidget({
-                  url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                });
-              } else {
-                console.error('Calendly script not loaded.');
-              }
-              return false;
-            }}>
-              Request Demo Assessment
-            </Button>
+            <a>
+              <Button size="lg" variant="outline" className="border-white hover:bg-white bg-white/0" onClick={() => {
+                if (window.Calendly) {
+                  window.Calendly.initPopupWidget({
+                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                  });
+                } else {
+                  console.error('Calendly script not loaded.');
+                }
+                return false;
+              }}>
+                Request Demo Assessment
+              </Button>
+            </a>
           </div>
 
 

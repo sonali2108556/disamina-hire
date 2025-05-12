@@ -50,20 +50,22 @@ export default function Home() {
                 Future-proof your organization, start hiring faster and smarter with Disamina AI.
               </p>
               <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <Button
-                  onClick={() => {
-                    if (window.Calendly) {
-                      window.Calendly.initPopupWidget({
-                        url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                      });
-                    } else {
-                      console.error('Calendly script not loaded.');
-                    }
-                    return false;
-                  }}
-                  size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg">
-                  Schedule a Call
-                </Button>
+                <a>
+                  <Button
+                    onClick={() => {
+                      if (window.Calendly) {
+                        window.Calendly.initPopupWidget({
+                          url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                        });
+                      } else {
+                        console.error('Calendly script not loaded.');
+                      }
+                      return false;
+                    }}
+                    size="lg" className="bg-white text-primary hover:bg-gray-100 text-lg">
+                    Schedule a Call
+                  </Button>
+                </a>
                 <a href="https://portal.disamina.ai/signin" target="_blank" rel="noreferrer noopener">
                   <Button size="lg" className="bg-secondary hover:bg-secondary-dark text-white text-lg">
                     Start Free Trial

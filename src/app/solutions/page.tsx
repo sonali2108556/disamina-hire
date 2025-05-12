@@ -96,7 +96,7 @@ const solutions = [
 const Solutions = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      
+
       <Navbar />
       <main className="flex-grow">
         {/* Hero Section */}
@@ -130,7 +130,7 @@ const Solutions = () => {
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">AI Hiring Solutions To Handle Heavy Lifting</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Let AI handle tasks from screening to scheduling – empower your team for decision-making.
+                Let AI handle tasks from screening to scheduling – empower your team for decision-making.
               </p>
             </div>
 
@@ -174,18 +174,20 @@ const Solutions = () => {
               Book a demo to see how our AI solutions can streamline your recruitment process.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button onClick={() => {
-                if (window.Calendly) {
-                  window.Calendly.initPopupWidget({
-                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                  });
-                } else {
-                  console.error('Calendly script not loaded.');
-                }
-                return false;
-              }} size="lg" className="bg-white text-primary hover:bg-gray-100">
-                Book a Demo
-              </Button>
+              <a>
+                <Button onClick={() => {
+                  if (window.Calendly) {
+                    window.Calendly.initPopupWidget({
+                      url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                    });
+                  } else {
+                    console.error('Calendly script not loaded.');
+                  }
+                  return false;
+                }} size="lg" className="bg-white text-primary hover:bg-gray-100">
+                  Book a Demo
+                </Button>
+              </a>
               <Link href="/pricing">
                 <Button size="lg" variant="outline" className="border-white text-primary hover:bg-white/10 hover:text-white">
                   Explore Pricing

@@ -36,10 +36,12 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
           <a href="https://portal.disamina.ai/" target="_blank" rel="noreferrer noopener">
-            <Button className="bg-gradient-blend hover:opacity-90 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105">
-              Start Hiring Now
-              <ArrowRight className="w-5 h-5" />
-            </Button>
+            <div className="flex justify-center w-full">
+              <Button className="bg-gradient-blend hover:opacity-90 text-white text-[17px] py-6 px-8 rounded-md flex gap-2 items-center transform transition-transform hover:scale-105">
+                Start Hiring Now
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </div>
           </a>
         </div>
 

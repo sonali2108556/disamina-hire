@@ -190,18 +190,20 @@ const VideoInterviews = () => (
                 Get Started Free
               </Button>
             </Link>
-            <Button size="lg" variant="outline" className="border-white hover:bg-white bg-white/0" onClick={() => {
-              if (window.Calendly) {
-                window.Calendly.initPopupWidget({
-                  url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                });
-              } else {
-                console.error('Calendly script not loaded.');
-              }
-              return false;
-            }}>
-              Request Demo
-            </Button>
+            <a>
+              <Button size="lg" variant="outline" className="border-white hover:bg-white bg-white/0" onClick={() => {
+                if (window.Calendly) {
+                  window.Calendly.initPopupWidget({
+                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                  });
+                } else {
+                  console.error('Calendly script not loaded.');
+                }
+                return false;
+              }}>
+                Request Demo
+              </Button>
+            </a>
           </div>
 
         </div>

@@ -192,19 +192,21 @@ const PsychometricTests = () => (
                 Free Assessment Trial
               </Button>
             </Link>
-            <Button
-              onClick={() => {
-                if (window.Calendly) {
-                  window.Calendly.initPopupWidget({
-                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                  });
-                } else {
-                  console.error('Calendly script not loaded.');
-                }
-                return false;
-              }} size="lg" variant="outline" className="border-white bg-white/0 hover:bg-white">
-              View Test Library
-            </Button>
+            <a>
+              <Button
+                onClick={() => {
+                  if (window.Calendly) {
+                    window.Calendly.initPopupWidget({
+                      url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                    });
+                  } else {
+                    console.error('Calendly script not loaded.');
+                  }
+                  return false;
+                }} size="lg" variant="outline" className="border-white bg-white/0 hover:bg-white">
+                View Test Library
+              </Button>
+            </a>
           </div>
         </div>
       </div>

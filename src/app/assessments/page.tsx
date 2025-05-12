@@ -115,7 +115,7 @@ const Assessments = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      
+
       <Navbar />
       <main className="flex-grow">
         <section className="bg-gradient-primary text-white py-20 md:py-28">
@@ -376,18 +376,20 @@ const Assessments = () => {
                   Get Started
                 </Button>
               </a>
-              <Button onClick={() => {
-                if (window.Calendly) {
-                  window.Calendly.initPopupWidget({
-                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                  });
-                } else {
-                  console.error('Calendly script not loaded.');
-                }
-                return false;
-              }} size="lg" variant="outline" className="border-white text-primary hover:text-white hover:bg-white/10 text-lg py-6 px-8">
-                Schedule Demo
-              </Button>
+              <a>
+                <Button onClick={() => {
+                  if (window.Calendly) {
+                    window.Calendly.initPopupWidget({
+                      url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                    });
+                  } else {
+                    console.error('Calendly script not loaded.');
+                  }
+                  return false;
+                }} size="lg" variant="outline" className="border-white text-primary hover:text-white hover:bg-white/10 text-lg py-6 px-8">
+                  Schedule Demo
+                </Button>
+              </a>
             </div>
           </div>
         </section>

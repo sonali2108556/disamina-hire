@@ -33,7 +33,7 @@ const Pricing = () => {
     {
       name: "Base",
       description: "Free hiring essentials to get you started.",
-       monthlyPrice: 0,
+      monthlyPrice: 0,
       features: [
         "Unlimited jobs",
         "AI JD generator",
@@ -46,7 +46,7 @@ const Pricing = () => {
         "2 users"
       ],
       notIncluded: [
-       
+
       ],
       cta: "Try Now",
       ctaLink: "https://portal.disamina.ai/",
@@ -70,7 +70,7 @@ const Pricing = () => {
         "5 users"
       ],
       notIncluded: [
-       
+
       ],
       cta: "Try Now",
       ctaLink: "https://portal.disamina.ai/",
@@ -98,7 +98,7 @@ const Pricing = () => {
         "10 users"
       ],
       notIncluded: [
-        
+
       ],
       cta: "Try Now",
       ctaLink: "https://portal.disamina.ai/",
@@ -413,18 +413,20 @@ const Pricing = () => {
                   Start Free Trial
                 </Button>
               </a>
-              <Button onClick={() => {
-                if (window.Calendly) {
-                  window.Calendly.initPopupWidget({
-                    url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
-                  });
-                } else {
-                  console.error('Calendly script not loaded.');
-                }
-                return false;
-              }} size="lg" variant="outline" className="border-white text-primary hover:bg-white/10  hover:text-white">
-                Book a Demo
-              </Button>
+              <a>
+                <Button onClick={() => {
+                  if (window.Calendly) {
+                    window.Calendly.initPopupWidget({
+                      url: 'https://calendly.com/disamina?hide_gdpr_banner=1',
+                    });
+                  } else {
+                    console.error('Calendly script not loaded.');
+                  }
+                  return false;
+                }} size="lg" variant="outline" className="border-white text-primary hover:bg-white/10  hover:text-white">
+                  Book a Demo
+                </Button>
+              </a>
             </div>
           </div>
         </section>
